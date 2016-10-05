@@ -1,0 +1,2705 @@
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\cc4BGC3g.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.file	"cymetadata.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.global	cy_metadata
+  19              		.global	cy_meta_flashprotect
+  20              		.global	cy_meta_wonvl
+  21              		.global	cy_meta_custnvl
+  22              		.global	cy_meta_configecc
+  23              		.section	.cyconfigecc,"a",%progbits
+  24              		.align	2
+  25              		.type	cy_meta_configecc, %object
+  26              		.size	cy_meta_configecc, 2080
+  27              	cy_meta_configecc:
+  28 0000 03       		.byte	3
+  29 0001 52       		.byte	82
+  30 0002 00       		.byte	0
+  31 0003 40       		.byte	64
+  32 0004 04       		.byte	4
+  33 0005 64       		.byte	100
+  34 0006 00       		.byte	0
+  35 0007 40       		.byte	64
+  36 0008 03       		.byte	3
+  37 0009 65       		.byte	101
+  38 000a 00       		.byte	0
+  39 000b 40       		.byte	64
+  40 000c 02       		.byte	2
+  41 000d 05       		.byte	5
+  42 000e 01       		.byte	1
+  43 000f 40       		.byte	64
+  44 0010 02       		.byte	2
+  45 0011 07       		.byte	7
+  46 0012 01       		.byte	1
+  47 0013 40       		.byte	64
+  48 0014 66       		.byte	102
+  49 0015 08       		.byte	8
+  50 0016 01       		.byte	1
+  51 0017 40       		.byte	64
+  52 0018 43       		.byte	67
+  53 0019 09       		.byte	9
+  54 001a 01       		.byte	1
+  55 001b 40       		.byte	64
+  56 001c 6A       		.byte	106
+  57 001d 0A       		.byte	10
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\cc4BGC3g.s 			page 2
+
+
+  58 001e 01       		.byte	1
+  59 001f 40       		.byte	64
+  60 0020 49       		.byte	73
+  61 0021 0B       		.byte	11
+  62 0022 01       		.byte	1
+  63 0023 40       		.byte	64
+  64 0024 08       		.byte	8
+  65 0025 0C       		.byte	12
+  66 0026 01       		.byte	1
+  67 0027 40       		.byte	64
+  68 0028 30       		.byte	48
+  69 0029 0D       		.byte	13
+  70 002a 01       		.byte	1
+  71 002b 40       		.byte	64
+  72 002c 03       		.byte	3
+  73 002d 15       		.byte	21
+  74 002e 01       		.byte	1
+  75 002f 40       		.byte	64
+  76 0030 03       		.byte	3
+  77 0031 17       		.byte	23
+  78 0032 01       		.byte	1
+  79 0033 40       		.byte	64
+  80 0034 60       		.byte	96
+  81 0035 18       		.byte	24
+  82 0036 01       		.byte	1
+  83 0037 40       		.byte	64
+  84 0038 56       		.byte	86
+  85 0039 19       		.byte	25
+  86 003a 01       		.byte	1
+  87 003b 40       		.byte	64
+  88 003c 66       		.byte	102
+  89 003d 1A       		.byte	26
+  90 003e 01       		.byte	1
+  91 003f 40       		.byte	64
+  92 0040 55       		.byte	85
+  93 0041 1B       		.byte	27
+  94 0042 01       		.byte	1
+  95 0043 40       		.byte	64
+  96 0044 06       		.byte	6
+  97 0045 40       		.byte	64
+  98 0046 01       		.byte	1
+  99 0047 40       		.byte	64
+ 100 0048 06       		.byte	6
+ 101 0049 41       		.byte	65
+ 102 004a 01       		.byte	1
+ 103 004b 40       		.byte	64
+ 104 004c 0A       		.byte	10
+ 105 004d 42       		.byte	66
+ 106 004e 01       		.byte	1
+ 107 004f 40       		.byte	64
+ 108 0050 07       		.byte	7
+ 109 0051 43       		.byte	67
+ 110 0052 01       		.byte	1
+ 111 0053 40       		.byte	64
+ 112 0054 04       		.byte	4
+ 113 0055 45       		.byte	69
+ 114 0056 01       		.byte	1
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\cc4BGC3g.s 			page 3
+
+
+ 115 0057 40       		.byte	64
+ 116 0058 03       		.byte	3
+ 117 0059 46       		.byte	70
+ 118 005a 01       		.byte	1
+ 119 005b 40       		.byte	64
+ 120 005c 05       		.byte	5
+ 121 005d 47       		.byte	71
+ 122 005e 01       		.byte	1
+ 123 005f 40       		.byte	64
+ 124 0060 07       		.byte	7
+ 125 0061 48       		.byte	72
+ 126 0062 01       		.byte	1
+ 127 0063 40       		.byte	64
+ 128 0064 10       		.byte	16
+ 129 0065 49       		.byte	73
+ 130 0066 01       		.byte	1
+ 131 0067 40       		.byte	64
+ 132 0068 0E       		.byte	14
+ 133 0069 4C       		.byte	76
+ 134 006a 01       		.byte	1
+ 135 006b 40       		.byte	64
+ 136 006c 0B       		.byte	11
+ 137 006d 4D       		.byte	77
+ 138 006e 01       		.byte	1
+ 139 006f 40       		.byte	64
+ 140 0070 05       		.byte	5
+ 141 0071 50       		.byte	80
+ 142 0072 01       		.byte	1
+ 143 0073 40       		.byte	64
+ 144 0074 03       		.byte	3
+ 145 0075 51       		.byte	81
+ 146 0076 01       		.byte	1
+ 147 0077 40       		.byte	64
+ 148 0078 0C       		.byte	12
+ 149 0079 20       		.byte	32
+ 150 007a 10       		.byte	16
+ 151 007b 40       		.byte	64
+ 152 007c 14       		.byte	20
+ 153 007d 80       		.byte	-128
+ 154 007e 88       		.byte	-120
+ 155 007f 38       		.byte	56
+ 156 0080 89       		.byte	-119
+ 157 0081 0F       		.byte	15
+ 158 0082 8B       		.byte	-117
+ 159 0083 38       		.byte	56
+ 160 0084 8C       		.byte	-116
+ 161 0085 72       		.byte	114
+ 162 0086 88       		.byte	-120
+ 163 0087 72       		.byte	114
+ 164 0088 8A       		.byte	-118
+ 165 0089 0F       		.byte	15
+ 166 008a 8B       		.byte	-117
+ 167 008b 0F       		.byte	15
+ 168 008c E2       		.byte	-30
+ 169 008d 08       		.byte	8
+ 170 008e E6       		.byte	-26
+ 171 008f 08       		.byte	8
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\cc4BGC3g.s 			page 4
+
+
+ 172 0090 E2       		.byte	-30
+ 173 0091 02       		.byte	2
+ 174 0092 E6       		.byte	-26
+ 175 0093 10       		.byte	16
+ 176 0094 02       		.byte	2
+ 177 0095 04       		.byte	4
+ 178 0096 05       		.byte	5
+ 179 0097 67       		.byte	103
+ 180 0098 06       		.byte	6
+ 181 0099 02       		.byte	2
+ 182 009a 0E       		.byte	14
+ 183 009b 01       		.byte	1
+ 184 009c 10       		.byte	16
+ 185 009d 0C       		.byte	12
+ 186 009e 14       		.byte	20
+ 187 009f 08       		.byte	8
+ 188 00a0 15       		.byte	21
+ 189 00a1 01       		.byte	1
+ 190 00a2 17       		.byte	23
+ 191 00a3 0E       		.byte	14
+ 192 00a4 19       		.byte	25
+ 193 00a5 44       		.byte	68
+ 194 00a6 1B       		.byte	27
+ 195 00a7 31       		.byte	49
+ 196 00a8 1E       		.byte	30
+ 197 00a9 02       		.byte	2
+ 198 00aa 22       		.byte	34
+ 199 00ab 01       		.byte	1
+ 200 00ac 28       		.byte	40
+ 201 00ad 0C       		.byte	12
+ 202 00ae 29       		.byte	41
+ 203 00af 67       		.byte	103
+ 204 00b0 2D       		.byte	45
+ 205 00b1 22       		.byte	34
+ 206 00b2 2F       		.byte	47
+ 207 00b3 51       		.byte	81
+ 208 00b4 30       		.byte	48
+ 209 00b5 02       		.byte	2
+ 210 00b6 31       		.byte	49
+ 211 00b7 18       		.byte	24
+ 212 00b8 32       		.byte	50
+ 213 00b9 01       		.byte	1
+ 214 00ba 33       		.byte	51
+ 215 00bb 60       		.byte	96
+ 216 00bc 35       		.byte	53
+ 217 00bd 07       		.byte	7
+ 218 00be 36       		.byte	54
+ 219 00bf 0C       		.byte	12
+ 220 00c0 38       		.byte	56
+ 221 00c1 80       		.byte	-128
+ 222 00c2 3E       		.byte	62
+ 223 00c3 45       		.byte	69
+ 224 00c4 3F       		.byte	63
+ 225 00c5 01       		.byte	1
+ 226 00c6 40       		.byte	64
+ 227 00c7 35       		.byte	53
+ 228 00c8 41       		.byte	65
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\cc4BGC3g.s 			page 5
+
+
+ 229 00c9 02       		.byte	2
+ 230 00ca 42       		.byte	66
+ 231 00cb 04       		.byte	4
+ 232 00cc 44       		.byte	68
+ 233 00cd 01       		.byte	1
+ 234 00ce 45       		.byte	69
+ 235 00cf E0       		.byte	-32
+ 236 00d0 46       		.byte	70
+ 237 00d1 C0       		.byte	-64
+ 238 00d2 48       		.byte	72
+ 239 00d3 0A       		.byte	10
+ 240 00d4 49       		.byte	73
+ 241 00d5 FF       		.byte	-1
+ 242 00d6 4A       		.byte	74
+ 243 00d7 FF       		.byte	-1
+ 244 00d8 4B       		.byte	75
+ 245 00d9 FF       		.byte	-1
+ 246 00da 4C       		.byte	76
+ 247 00db 62       		.byte	98
+ 248 00dc 4D       		.byte	77
+ 249 00dd A0       		.byte	-96
+ 250 00de 4E       		.byte	78
+ 251 00df F0       		.byte	-16
+ 252 00e0 4F       		.byte	79
+ 253 00e1 41       		.byte	65
+ 254 00e2 50       		.byte	80
+ 255 00e3 0C       		.byte	12
+ 256 00e4 54       		.byte	84
+ 257 00e5 18       		.byte	24
+ 258 00e6 56       		.byte	86
+ 259 00e7 04       		.byte	4
+ 260 00e8 58       		.byte	88
+ 261 00e9 04       		.byte	4
+ 262 00ea 59       		.byte	89
+ 263 00eb 04       		.byte	4
+ 264 00ec 5A       		.byte	90
+ 265 00ed 04       		.byte	4
+ 266 00ee 5B       		.byte	91
+ 267 00ef 04       		.byte	4
+ 268 00f0 5C       		.byte	92
+ 269 00f1 10       		.byte	16
+ 270 00f2 5D       		.byte	93
+ 271 00f3 11       		.byte	17
+ 272 00f4 5F       		.byte	95
+ 273 00f5 01       		.byte	1
+ 274 00f6 66       		.byte	102
+ 275 00f7 40       		.byte	64
+ 276 00f8 67       		.byte	103
+ 277 00f9 02       		.byte	2
+ 278 00fa 69       		.byte	105
+ 279 00fb 10       		.byte	16
+ 280 00fc 6A       		.byte	106
+ 281 00fd 30       		.byte	48
+ 282 00fe 6B       		.byte	107
+ 283 00ff 10       		.byte	16
+ 284 0100 6D       		.byte	109
+ 285 0101 10       		.byte	16
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\cc4BGC3g.s 			page 6
+
+
+ 286 0102 6E       		.byte	110
+ 287 0103 10       		.byte	16
+ 288 0104 6F       		.byte	111
+ 289 0105 12       		.byte	18
+ 290 0106 80       		.byte	-128
+ 291 0107 1C       		.byte	28
+ 292 0108 82       		.byte	-126
+ 293 0109 43       		.byte	67
+ 294 010a 84       		.byte	-124
+ 295 010b 41       		.byte	65
+ 296 010c 86       		.byte	-122
+ 297 010d 0E       		.byte	14
+ 298 010e 89       		.byte	-119
+ 299 010f 01       		.byte	1
+ 300 0110 8E       		.byte	-114
+ 301 0111 1C       		.byte	28
+ 302 0112 94       		.byte	-108
+ 303 0113 41       		.byte	65
+ 304 0114 96       		.byte	-106
+ 305 0115 16       		.byte	22
+ 306 0116 9C       		.byte	-100
+ 307 0117 20       		.byte	32
+ 308 0118 A2       		.byte	-94
+ 309 0119 08       		.byte	8
+ 310 011a A4       		.byte	-92
+ 311 011b 80       		.byte	-128
+ 312 011c A6       		.byte	-90
+ 313 011d 03       		.byte	3
+ 314 011e B0       		.byte	-80
+ 315 011f C0       		.byte	-64
+ 316 0120 B2       		.byte	-78
+ 317 0121 20       		.byte	32
+ 318 0122 B3       		.byte	-77
+ 319 0123 01       		.byte	1
+ 320 0124 B4       		.byte	-76
+ 321 0125 1A       		.byte	26
+ 322 0126 B6       		.byte	-74
+ 323 0127 0F       		.byte	15
+ 324 0128 B8       		.byte	-72
+ 325 0129 02       		.byte	2
+ 326 012a BA       		.byte	-70
+ 327 012b A0       		.byte	-96
+ 328 012c BE       		.byte	-66
+ 329 012d 04       		.byte	4
+ 330 012e BF       		.byte	-65
+ 331 012f 04       		.byte	4
+ 332 0130 C0       		.byte	-64
+ 333 0131 31       		.byte	49
+ 334 0132 C1       		.byte	-63
+ 335 0133 02       		.byte	2
+ 336 0134 C5       		.byte	-59
+ 337 0135 0B       		.byte	11
+ 338 0136 C6       		.byte	-58
+ 339 0137 E0       		.byte	-32
+ 340 0138 C7       		.byte	-57
+ 341 0139 0C       		.byte	12
+ 342 013a C8       		.byte	-56
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\cc4BGC3g.s 			page 7
+
+
+ 343 013b 19       		.byte	25
+ 344 013c C9       		.byte	-55
+ 345 013d FF       		.byte	-1
+ 346 013e CA       		.byte	-54
+ 347 013f FF       		.byte	-1
+ 348 0140 CB       		.byte	-53
+ 349 0141 FF       		.byte	-1
+ 350 0142 CE       		.byte	-50
+ 351 0143 F0       		.byte	-16
+ 352 0144 CF       		.byte	-49
+ 353 0145 44       		.byte	68
+ 354 0146 D0       		.byte	-48
+ 355 0147 0C       		.byte	12
+ 356 0148 D4       		.byte	-44
+ 357 0149 01       		.byte	1
+ 358 014a D6       		.byte	-42
+ 359 014b 04       		.byte	4
+ 360 014c D8       		.byte	-40
+ 361 014d 04       		.byte	4
+ 362 014e D9       		.byte	-39
+ 363 014f 04       		.byte	4
+ 364 0150 DA       		.byte	-38
+ 365 0151 04       		.byte	4
+ 366 0152 DB       		.byte	-37
+ 367 0153 04       		.byte	4
+ 368 0154 DC       		.byte	-36
+ 369 0155 02       		.byte	2
+ 370 0156 DD       		.byte	-35
+ 371 0157 22       		.byte	34
+ 372 0158 DF       		.byte	-33
+ 373 0159 01       		.byte	1
+ 374 015a E6       		.byte	-26
+ 375 015b C0       		.byte	-64
+ 376 015c EA       		.byte	-22
+ 377 015d 40       		.byte	64
+ 378 015e EB       		.byte	-21
+ 379 015f 02       		.byte	2
+ 380 0160 00       		.byte	0
+ 381 0161 04       		.byte	4
+ 382 0162 03       		.byte	3
+ 383 0163 82       		.byte	-126
+ 384 0164 06       		.byte	6
+ 385 0165 90       		.byte	-112
+ 386 0166 07       		.byte	7
+ 387 0167 01       		.byte	1
+ 388 0168 0A       		.byte	10
+ 389 0169 10       		.byte	16
+ 390 016a 0B       		.byte	11
+ 391 016b 01       		.byte	1
+ 392 016c 0C       		.byte	12
+ 393 016d 40       		.byte	64
+ 394 016e 0E       		.byte	14
+ 395 016f 41       		.byte	65
+ 396 0170 0F       		.byte	15
+ 397 0171 20       		.byte	32
+ 398 0172 10       		.byte	16
+ 399 0173 A0       		.byte	-96
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\cc4BGC3g.s 			page 8
+
+
+ 400 0174 15       		.byte	21
+ 401 0175 21       		.byte	33
+ 402 0176 18       		.byte	24
+ 403 0177 04       		.byte	4
+ 404 0178 19       		.byte	25
+ 405 0179 08       		.byte	8
+ 406 017a 1B       		.byte	27
+ 407 017b 82       		.byte	-126
+ 408 017c 1F       		.byte	31
+ 409 017d 45       		.byte	69
+ 410 017e 22       		.byte	34
+ 411 017f 04       		.byte	4
+ 412 0180 25       		.byte	37
+ 413 0181 10       		.byte	16
+ 414 0182 27       		.byte	39
+ 415 0183 58       		.byte	88
+ 416 0184 2D       		.byte	45
+ 417 0185 80       		.byte	-128
+ 418 0186 2F       		.byte	47
+ 419 0187 08       		.byte	8
+ 420 0188 37       		.byte	55
+ 421 0189 18       		.byte	24
+ 422 018a 38       		.byte	56
+ 423 018b 20       		.byte	32
+ 424 018c 3A       		.byte	58
+ 425 018d 40       		.byte	64
+ 426 018e 3B       		.byte	59
+ 427 018f 80       		.byte	-128
+ 428 0190 3D       		.byte	61
+ 429 0191 04       		.byte	4
+ 430 0192 40       		.byte	64
+ 431 0193 04       		.byte	4
+ 432 0194 41       		.byte	65
+ 433 0195 40       		.byte	64
+ 434 0196 42       		.byte	66
+ 435 0197 10       		.byte	16
+ 436 0198 44       		.byte	68
+ 437 0199 40       		.byte	64
+ 438 019a 45       		.byte	69
+ 439 019b 20       		.byte	32
+ 440 019c 47       		.byte	71
+ 441 019d 44       		.byte	68
+ 442 019e 4B       		.byte	75
+ 443 019f 04       		.byte	4
+ 444 01a0 4D       		.byte	77
+ 445 01a1 01       		.byte	1
+ 446 01a2 4E       		.byte	78
+ 447 01a3 01       		.byte	1
+ 448 01a4 50       		.byte	80
+ 449 01a5 18       		.byte	24
+ 450 01a6 52       		.byte	82
+ 451 01a7 20       		.byte	32
+ 452 01a8 56       		.byte	86
+ 453 01a9 10       		.byte	16
+ 454 01aa 58       		.byte	88
+ 455 01ab 02       		.byte	2
+ 456 01ac 5A       		.byte	90
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\cc4BGC3g.s 			page 9
+
+
+ 457 01ad 88       		.byte	-120
+ 458 01ae 5B       		.byte	91
+ 459 01af 20       		.byte	32
+ 460 01b0 5D       		.byte	93
+ 461 01b1 02       		.byte	2
+ 462 01b2 61       		.byte	97
+ 463 01b3 02       		.byte	2
+ 464 01b4 66       		.byte	102
+ 465 01b5 02       		.byte	2
+ 466 01b6 67       		.byte	103
+ 467 01b7 0A       		.byte	10
+ 468 01b8 86       		.byte	-122
+ 469 01b9 02       		.byte	2
+ 470 01ba 8D       		.byte	-115
+ 471 01bb 0A       		.byte	10
+ 472 01bc 90       		.byte	-112
+ 473 01bd 08       		.byte	8
+ 474 01be 91       		.byte	-111
+ 475 01bf 20       		.byte	32
+ 476 01c0 92       		.byte	-110
+ 477 01c1 40       		.byte	64
+ 478 01c2 98       		.byte	-104
+ 479 01c3 80       		.byte	-128
+ 480 01c4 99       		.byte	-103
+ 481 01c5 04       		.byte	4
+ 482 01c6 9A       		.byte	-102
+ 483 01c7 80       		.byte	-128
+ 484 01c8 9E       		.byte	-98
+ 485 01c9 40       		.byte	64
+ 486 01ca A3       		.byte	-93
+ 487 01cb 10       		.byte	16
+ 488 01cc AF       		.byte	-81
+ 489 01cd 02       		.byte	2
+ 490 01ce C0       		.byte	-64
+ 491 01cf BD       		.byte	-67
+ 492 01d0 C2       		.byte	-62
+ 493 01d1 B5       		.byte	-75
+ 494 01d2 C4       		.byte	-60
+ 495 01d3 5C       		.byte	92
+ 496 01d4 CA       		.byte	-54
+ 497 01d5 30       		.byte	48
+ 498 01d6 CC       		.byte	-52
+ 499 01d7 60       		.byte	96
+ 500 01d8 CE       		.byte	-50
+ 501 01d9 44       		.byte	68
+ 502 01da D0       		.byte	-48
+ 503 01db FE       		.byte	-2
+ 504 01dc D2       		.byte	-46
+ 505 01dd 10       		.byte	16
+ 506 01de D6       		.byte	-42
+ 507 01df 8F       		.byte	-113
+ 508 01e0 D8       		.byte	-40
+ 509 01e1 B1       		.byte	-79
+ 510 01e2 E6       		.byte	-26
+ 511 01e3 10       		.byte	16
+ 512 01e4 E8       		.byte	-24
+ 513 01e5 08       		.byte	8
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\cc4BGC3g.s 			page 10
+
+
+ 514 01e6 00       		.byte	0
+ 515 01e7 01       		.byte	1
+ 516 01e8 02       		.byte	2
+ 517 01e9 0E       		.byte	14
+ 518 01ea 03       		.byte	3
+ 519 01eb 08       		.byte	8
+ 520 01ec 04       		.byte	4
+ 521 01ed 1C       		.byte	28
+ 522 01ee 05       		.byte	5
+ 523 01ef 03       		.byte	3
+ 524 01f0 06       		.byte	6
+ 525 01f1 03       		.byte	3
+ 526 01f2 07       		.byte	7
+ 527 01f3 14       		.byte	20
+ 528 01f4 09       		.byte	9
+ 529 01f5 33       		.byte	51
+ 530 01f6 0B       		.byte	11
+ 531 01f7 0C       		.byte	12
+ 532 01f8 0E       		.byte	14
+ 533 01f9 03       		.byte	3
+ 534 01fa 14       		.byte	20
+ 535 01fb 01       		.byte	1
+ 536 01fc 16       		.byte	22
+ 537 01fd 16       		.byte	22
+ 538 01fe 1E       		.byte	30
+ 539 01ff 1C       		.byte	28
+ 540 0200 21       		.byte	33
+ 541 0201 33       		.byte	51
+ 542 0202 23       		.byte	35
+ 543 0203 04       		.byte	4
+ 544 0204 25       		.byte	37
+ 545 0205 0A       		.byte	10
+ 546 0206 26       		.byte	38
+ 547 0207 08       		.byte	8
+ 548 0208 27       		.byte	39
+ 549 0209 34       		.byte	52
+ 550 020a 2D       		.byte	45
+ 551 020b 40       		.byte	64
+ 552 020c 2F       		.byte	47
+ 553 020d 15       		.byte	21
+ 554 020e 30       		.byte	48
+ 555 020f 1A       		.byte	26
+ 556 0210 31       		.byte	49
+ 557 0211 60       		.byte	96
+ 558 0212 34       		.byte	52
+ 559 0213 0F       		.byte	15
+ 560 0214 35       		.byte	53
+ 561 0215 0F       		.byte	15
+ 562 0216 37       		.byte	55
+ 563 0217 10       		.byte	16
+ 564 0218 39       		.byte	57
+ 565 0219 02       		.byte	2
+ 566 021a 3A       		.byte	58
+ 567 021b 22       		.byte	34
+ 568 021c 3B       		.byte	59
+ 569 021d 20       		.byte	32
+ 570 021e 3F       		.byte	63
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\cc4BGC3g.s 			page 11
+
+
+ 571 021f 40       		.byte	64
+ 572 0220 40       		.byte	64
+ 573 0221 25       		.byte	37
+ 574 0222 41       		.byte	65
+ 575 0223 04       		.byte	4
+ 576 0224 45       		.byte	69
+ 577 0225 0E       		.byte	14
+ 578 0226 46       		.byte	70
+ 579 0227 B0       		.byte	-80
+ 580 0228 47       		.byte	71
+ 581 0229 0C       		.byte	12
+ 582 022a 48       		.byte	72
+ 583 022b 19       		.byte	25
+ 584 022c 49       		.byte	73
+ 585 022d FF       		.byte	-1
+ 586 022e 4A       		.byte	74
+ 587 022f FF       		.byte	-1
+ 588 0230 4B       		.byte	75
+ 589 0231 FF       		.byte	-1
+ 590 0232 4E       		.byte	78
+ 591 0233 F0       		.byte	-16
+ 592 0234 4F       		.byte	79
+ 593 0235 44       		.byte	68
+ 594 0236 50       		.byte	80
+ 595 0237 0C       		.byte	12
+ 596 0238 58       		.byte	88
+ 597 0239 04       		.byte	4
+ 598 023a 59       		.byte	89
+ 599 023b 04       		.byte	4
+ 600 023c 5A       		.byte	90
+ 601 023d 04       		.byte	4
+ 602 023e 5C       		.byte	92
+ 603 023f 11       		.byte	17
+ 604 0240 5D       		.byte	93
+ 605 0241 01       		.byte	1
+ 606 0242 5F       		.byte	95
+ 607 0243 01       		.byte	1
+ 608 0244 66       		.byte	102
+ 609 0245 C0       		.byte	-64
+ 610 0246 6A       		.byte	106
+ 611 0247 40       		.byte	64
+ 612 0248 6B       		.byte	107
+ 613 0249 02       		.byte	2
+ 614 024a 80       		.byte	-128
+ 615 024b 0C       		.byte	12
+ 616 024c 82       		.byte	-126
+ 617 024d 11       		.byte	17
+ 618 024e 85       		.byte	-123
+ 619 024f 3F       		.byte	63
+ 620 0250 86       		.byte	-122
+ 621 0251 40       		.byte	64
+ 622 0252 88       		.byte	-120
+ 623 0253 20       		.byte	32
+ 624 0254 8A       		.byte	-118
+ 625 0255 03       		.byte	3
+ 626 0256 8E       		.byte	-114
+ 627 0257 80       		.byte	-128
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\cc4BGC3g.s 			page 12
+
+
+ 628 0258 91       		.byte	-111
+ 629 0259 20       		.byte	32
+ 630 025a 92       		.byte	-110
+ 631 025b 80       		.byte	-128
+ 632 025c 94       		.byte	-108
+ 633 025d 1C       		.byte	28
+ 634 025e 95       		.byte	-107
+ 635 025f 02       		.byte	2
+ 636 0260 96       		.byte	-106
+ 637 0261 02       		.byte	2
+ 638 0262 97       		.byte	-105
+ 639 0263 05       		.byte	5
+ 640 0264 98       		.byte	-104
+ 641 0265 14       		.byte	20
+ 642 0266 99       		.byte	-103
+ 643 0267 14       		.byte	20
+ 644 0268 9B       		.byte	-101
+ 645 0269 0A       		.byte	10
+ 646 026a 9E       		.byte	-98
+ 647 026b 40       		.byte	64
+ 648 026c A0       		.byte	-96
+ 649 026d 09       		.byte	9
+ 650 026e A2       		.byte	-94
+ 651 026f 10       		.byte	16
+ 652 0270 A4       		.byte	-92
+ 653 0271 10       		.byte	16
+ 654 0272 A8       		.byte	-88
+ 655 0273 10       		.byte	16
+ 656 0274 A9       		.byte	-87
+ 657 0275 3F       		.byte	63
+ 658 0276 AA       		.byte	-86
+ 659 0277 0C       		.byte	12
+ 660 0278 AD       		.byte	-83
+ 661 0279 09       		.byte	9
+ 662 027a AF       		.byte	-81
+ 663 027b 12       		.byte	18
+ 664 027c B0       		.byte	-80
+ 665 027d 20       		.byte	32
+ 666 027e B1       		.byte	-79
+ 667 027f 20       		.byte	32
+ 668 0280 B2       		.byte	-78
+ 669 0281 80       		.byte	-128
+ 670 0282 B3       		.byte	-77
+ 671 0283 07       		.byte	7
+ 672 0284 B4       		.byte	-76
+ 673 0285 1F       		.byte	31
+ 674 0286 B5       		.byte	-75
+ 675 0287 18       		.byte	24
+ 676 0288 B6       		.byte	-74
+ 677 0289 40       		.byte	64
+ 678 028a BE       		.byte	-66
+ 679 028b 45       		.byte	69
+ 680 028c C0       		.byte	-64
+ 681 028d 04       		.byte	4
+ 682 028e C6       		.byte	-58
+ 683 028f 40       		.byte	64
+ 684 0290 C9       		.byte	-55
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\cc4BGC3g.s 			page 13
+
+
+ 685 0291 FF       		.byte	-1
+ 686 0292 CA       		.byte	-54
+ 687 0293 07       		.byte	7
+ 688 0294 CB       		.byte	-53
+ 689 0295 FF       		.byte	-1
+ 690 0296 CC       		.byte	-52
+ 691 0297 40       		.byte	64
+ 692 0298 CD       		.byte	-51
+ 693 0299 20       		.byte	32
+ 694 029a CE       		.byte	-50
+ 695 029b F0       		.byte	-16
+ 696 029c CF       		.byte	-49
+ 697 029d 05       		.byte	5
+ 698 029e D0       		.byte	-48
+ 699 029f 08       		.byte	8
+ 700 02a0 D4       		.byte	-44
+ 701 02a1 18       		.byte	24
+ 702 02a2 D6       		.byte	-42
+ 703 02a3 04       		.byte	4
+ 704 02a4 D8       		.byte	-40
+ 705 02a5 04       		.byte	4
+ 706 02a6 D9       		.byte	-39
+ 707 02a7 04       		.byte	4
+ 708 02a8 DA       		.byte	-38
+ 709 02a9 04       		.byte	4
+ 710 02aa DB       		.byte	-37
+ 711 02ab 04       		.byte	4
+ 712 02ac DC       		.byte	-36
+ 713 02ad 01       		.byte	1
+ 714 02ae DD       		.byte	-35
+ 715 02af 01       		.byte	1
+ 716 02b0 DF       		.byte	-33
+ 717 02b1 01       		.byte	1
+ 718 02b2 E0       		.byte	-32
+ 719 02b3 40       		.byte	64
+ 720 02b4 E1       		.byte	-31
+ 721 02b5 A8       		.byte	-88
+ 722 02b6 E2       		.byte	-30
+ 723 02b7 40       		.byte	64
+ 724 02b8 E3       		.byte	-29
+ 725 02b9 20       		.byte	32
+ 726 02ba 00       		.byte	0
+ 727 02bb 04       		.byte	4
+ 728 02bc 01       		.byte	1
+ 729 02bd 82       		.byte	-126
+ 730 02be 04       		.byte	4
+ 731 02bf 80       		.byte	-128
+ 732 02c0 05       		.byte	5
+ 733 02c1 12       		.byte	18
+ 734 02c2 06       		.byte	6
+ 735 02c3 10       		.byte	16
+ 736 02c4 0A       		.byte	10
+ 737 02c5 22       		.byte	34
+ 738 02c6 0C       		.byte	12
+ 739 02c7 02       		.byte	2
+ 740 02c8 0D       		.byte	13
+ 741 02c9 A0       		.byte	-96
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\cc4BGC3g.s 			page 14
+
+
+ 742 02ca 0F       		.byte	15
+ 743 02cb 20       		.byte	32
+ 744 02cc 10       		.byte	16
+ 745 02cd 20       		.byte	32
+ 746 02ce 15       		.byte	21
+ 747 02cf 22       		.byte	34
+ 748 02d0 16       		.byte	22
+ 749 02d1 20       		.byte	32
+ 750 02d2 18       		.byte	24
+ 751 02d3 04       		.byte	4
+ 752 02d4 19       		.byte	25
+ 753 02d5 02       		.byte	2
+ 754 02d6 1A       		.byte	26
+ 755 02d7 40       		.byte	64
+ 756 02d8 1B       		.byte	27
+ 757 02d9 10       		.byte	16
+ 758 02da 1D       		.byte	29
+ 759 02db 50       		.byte	80
+ 760 02dc 1F       		.byte	31
+ 761 02dd 06       		.byte	6
+ 762 02de 21       		.byte	33
+ 763 02df 11       		.byte	17
+ 764 02e0 22       		.byte	34
+ 765 02e1 51       		.byte	81
+ 766 02e2 25       		.byte	37
+ 767 02e3 04       		.byte	4
+ 768 02e4 26       		.byte	38
+ 769 02e5 2A       		.byte	42
+ 770 02e6 29       		.byte	41
+ 771 02e7 82       		.byte	-126
+ 772 02e8 2A       		.byte	42
+ 773 02e9 80       		.byte	-128
+ 774 02ea 2B       		.byte	43
+ 775 02eb 10       		.byte	16
+ 776 02ec 2C       		.byte	44
+ 777 02ed 01       		.byte	1
+ 778 02ee 2F       		.byte	47
+ 779 02ef 08       		.byte	8
+ 780 02f0 36       		.byte	54
+ 781 02f1 28       		.byte	40
+ 782 02f2 37       		.byte	55
+ 783 02f3 01       		.byte	1
+ 784 02f4 38       		.byte	56
+ 785 02f5 08       		.byte	8
+ 786 02f6 39       		.byte	57
+ 787 02f7 22       		.byte	34
+ 788 02f8 3D       		.byte	61
+ 789 02f9 04       		.byte	4
+ 790 02fa 41       		.byte	65
+ 791 02fb 10       		.byte	16
+ 792 02fc 42       		.byte	66
+ 793 02fd 40       		.byte	64
+ 794 02fe 46       		.byte	70
+ 795 02ff 40       		.byte	64
+ 796 0300 49       		.byte	73
+ 797 0301 84       		.byte	-124
+ 798 0302 50       		.byte	80
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\cc4BGC3g.s 			page 15
+
+
+ 799 0303 04       		.byte	4
+ 800 0304 51       		.byte	81
+ 801 0305 20       		.byte	32
+ 802 0306 54       		.byte	84
+ 803 0307 20       		.byte	32
+ 804 0308 56       		.byte	86
+ 805 0309 A0       		.byte	-96
+ 806 030a 58       		.byte	88
+ 807 030b 80       		.byte	-128
+ 808 030c 5A       		.byte	90
+ 809 030d 80       		.byte	-128
+ 810 030e 5C       		.byte	92
+ 811 030f 01       		.byte	1
+ 812 0310 65       		.byte	101
+ 813 0311 40       		.byte	64
+ 814 0312 66       		.byte	102
+ 815 0313 02       		.byte	2
+ 816 0314 67       		.byte	103
+ 817 0315 88       		.byte	-120
+ 818 0316 86       		.byte	-122
+ 819 0317 02       		.byte	2
+ 820 0318 87       		.byte	-121
+ 821 0319 40       		.byte	64
+ 822 031a 90       		.byte	-112
+ 823 031b 81       		.byte	-127
+ 824 031c 91       		.byte	-111
+ 825 031d 04       		.byte	4
+ 826 031e 98       		.byte	-104
+ 827 031f 01       		.byte	1
+ 828 0320 9A       		.byte	-102
+ 829 0321 10       		.byte	16
+ 830 0322 9B       		.byte	-101
+ 831 0323 01       		.byte	1
+ 832 0324 A0       		.byte	-96
+ 833 0325 02       		.byte	2
+ 834 0326 A1       		.byte	-95
+ 835 0327 80       		.byte	-128
+ 836 0328 A3       		.byte	-93
+ 837 0329 08       		.byte	8
+ 838 032a A5       		.byte	-91
+ 839 032b 04       		.byte	4
+ 840 032c A6       		.byte	-90
+ 841 032d 22       		.byte	34
+ 842 032e B0       		.byte	-80
+ 843 032f 81       		.byte	-127
+ 844 0330 B1       		.byte	-79
+ 845 0331 20       		.byte	32
+ 846 0332 B3       		.byte	-77
+ 847 0333 80       		.byte	-128
+ 848 0334 B6       		.byte	-74
+ 849 0335 20       		.byte	32
+ 850 0336 B7       		.byte	-73
+ 851 0337 40       		.byte	64
+ 852 0338 C0       		.byte	-64
+ 853 0339 FD       		.byte	-3
+ 854 033a C2       		.byte	-62
+ 855 033b F5       		.byte	-11
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\cc4BGC3g.s 			page 16
+
+
+ 856 033c C4       		.byte	-60
+ 857 033d 74       		.byte	116
+ 858 033e CA       		.byte	-54
+ 859 033f 3B       		.byte	59
+ 860 0340 CC       		.byte	-52
+ 861 0341 E0       		.byte	-32
+ 862 0342 CE       		.byte	-50
+ 863 0343 47       		.byte	71
+ 864 0344 D0       		.byte	-48
+ 865 0345 85       		.byte	-123
+ 866 0346 D2       		.byte	-46
+ 867 0347 08       		.byte	8
+ 868 0348 D6       		.byte	-42
+ 869 0349 80       		.byte	-128
+ 870 034a D8       		.byte	-40
+ 871 034b B0       		.byte	-80
+ 872 034c 86       		.byte	-122
+ 873 034d 01       		.byte	1
+ 874 034e 92       		.byte	-110
+ 875 034f 05       		.byte	5
+ 876 0350 A6       		.byte	-90
+ 877 0351 02       		.byte	2
+ 878 0352 B4       		.byte	-76
+ 879 0353 03       		.byte	3
+ 880 0354 B6       		.byte	-74
+ 881 0355 04       		.byte	4
+ 882 0356 BE       		.byte	-66
+ 883 0357 10       		.byte	16
+ 884 0358 D8       		.byte	-40
+ 885 0359 04       		.byte	4
+ 886 035a DF       		.byte	-33
+ 887 035b 01       		.byte	1
+ 888 035c 02       		.byte	2
+ 889 035d 20       		.byte	32
+ 890 035e 04       		.byte	4
+ 891 035f 10       		.byte	16
+ 892 0360 05       		.byte	5
+ 893 0361 08       		.byte	8
+ 894 0362 07       		.byte	7
+ 895 0363 50       		.byte	80
+ 896 0364 08       		.byte	8
+ 897 0365 01       		.byte	1
+ 898 0366 0E       		.byte	14
+ 899 0367 2A       		.byte	42
+ 900 0368 0F       		.byte	15
+ 901 0369 80       		.byte	-128
+ 902 036a 11       		.byte	17
+ 903 036b 08       		.byte	8
+ 904 036c 14       		.byte	20
+ 905 036d 01       		.byte	1
+ 906 036e 17       		.byte	23
+ 907 036f 2A       		.byte	42
+ 908 0370 19       		.byte	25
+ 909 0371 80       		.byte	-128
+ 910 0372 1B       		.byte	27
+ 911 0373 10       		.byte	16
+ 912 0374 1C       		.byte	28
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\cc4BGC3g.s 			page 17
+
+
+ 913 0375 10       		.byte	16
+ 914 0376 1D       		.byte	29
+ 915 0377 88       		.byte	-120
+ 916 0378 1E       		.byte	30
+ 917 0379 48       		.byte	72
+ 918 037a 1F       		.byte	31
+ 919 037b 04       		.byte	4
+ 920 037c 24       		.byte	36
+ 921 037d 81       		.byte	-127
+ 922 037e 25       		.byte	37
+ 923 037f 20       		.byte	32
+ 924 0380 26       		.byte	38
+ 925 0381 10       		.byte	16
+ 926 0382 27       		.byte	39
+ 927 0383 10       		.byte	16
+ 928 0384 2C       		.byte	44
+ 929 0385 80       		.byte	-128
+ 930 0386 2D       		.byte	45
+ 931 0387 88       		.byte	-120
+ 932 0388 2F       		.byte	47
+ 933 0389 04       		.byte	4
+ 934 038a 36       		.byte	54
+ 935 038b 27       		.byte	39
+ 936 038c 37       		.byte	55
+ 937 038d 80       		.byte	-128
+ 938 038e 3E       		.byte	62
+ 939 038f 2A       		.byte	42
+ 940 0390 3F       		.byte	63
+ 941 0391 80       		.byte	-128
+ 942 0392 45       		.byte	69
+ 943 0393 A8       		.byte	-88
+ 944 0394 4E       		.byte	78
+ 945 0395 02       		.byte	2
+ 946 0396 4F       		.byte	79
+ 947 0397 20       		.byte	32
+ 948 0398 54       		.byte	84
+ 949 0399 02       		.byte	2
+ 950 039a 56       		.byte	86
+ 951 039b 10       		.byte	16
+ 952 039c 5E       		.byte	94
+ 953 039d 40       		.byte	64
+ 954 039e 6D       		.byte	109
+ 955 039f 04       		.byte	4
+ 956 03a0 6F       		.byte	111
+ 957 03a1 09       		.byte	9
+ 958 03a2 76       		.byte	118
+ 959 03a3 2A       		.byte	42
+ 960 03a4 77       		.byte	119
+ 961 03a5 2A       		.byte	42
+ 962 03a6 8D       		.byte	-115
+ 963 03a7 04       		.byte	4
+ 964 03a8 8F       		.byte	-113
+ 965 03a9 40       		.byte	64
+ 966 03aa C0       		.byte	-64
+ 967 03ab 74       		.byte	116
+ 968 03ac C2       		.byte	-62
+ 969 03ad F8       		.byte	-8
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\cc4BGC3g.s 			page 18
+
+
+ 970 03ae C4       		.byte	-60
+ 971 03af F4       		.byte	-12
+ 972 03b0 CA       		.byte	-54
+ 973 03b1 F0       		.byte	-16
+ 974 03b2 CC       		.byte	-52
+ 975 03b3 F0       		.byte	-16
+ 976 03b4 CE       		.byte	-50
+ 977 03b5 F0       		.byte	-16
+ 978 03b6 D0       		.byte	-48
+ 979 03b7 70       		.byte	112
+ 980 03b8 D2       		.byte	-46
+ 981 03b9 30       		.byte	48
+ 982 03ba D6       		.byte	-42
+ 983 03bb 10       		.byte	16
+ 984 03bc E0       		.byte	-32
+ 985 03bd 08       		.byte	8
+ 986 03be E8       		.byte	-24
+ 987 03bf 20       		.byte	32
+ 988 03c0 EA       		.byte	-22
+ 989 03c1 05       		.byte	5
+ 990 03c2 E2       		.byte	-30
+ 991 03c3 08       		.byte	8
+ 992 03c4 E6       		.byte	-26
+ 993 03c5 20       		.byte	32
+ 994 03c6 EE       		.byte	-18
+ 995 03c7 04       		.byte	4
+ 996 03c8 02       		.byte	2
+ 997 03c9 63       		.byte	99
+ 998 03ca 03       		.byte	3
+ 999 03cb 04       		.byte	4
+ 1000 03cc 04       		.byte	4
+ 1001 03cd 02       		.byte	2
+ 1002 03ce 05       		.byte	5
+ 1003 03cf 08       		.byte	8
+ 1004 03d0 08       		.byte	8
+ 1005 03d1 73       		.byte	115
+ 1006 03d2 09       		.byte	9
+ 1007 03d3 60       		.byte	96
+ 1008 03d4 0A       		.byte	10
+ 1009 03d5 0C       		.byte	12
+ 1010 03d6 0C       		.byte	12
+ 1011 03d7 08       		.byte	8
+ 1012 03d8 0D       		.byte	13
+ 1013 03d9 1C       		.byte	28
+ 1014 03da 0F       		.byte	15
+ 1015 03db E1       		.byte	-31
+ 1016 03dc 10       		.byte	16
+ 1017 03dd 1F       		.byte	31
+ 1018 03de 12       		.byte	18
+ 1019 03df 60       		.byte	96
+ 1020 03e0 13       		.byte	19
+ 1021 03e1 63       		.byte	99
+ 1022 03e2 14       		.byte	20
+ 1023 03e3 01       		.byte	1
+ 1024 03e4 15       		.byte	21
+ 1025 03e5 18       		.byte	24
+ 1026 03e6 18       		.byte	24
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\cc4BGC3g.s 			page 19
+
+
+ 1027 03e7 7F       		.byte	127
+ 1028 03e8 19       		.byte	25
+ 1029 03e9 40       		.byte	64
+ 1030 03ea 1C       		.byte	28
+ 1031 03eb 5C       		.byte	92
+ 1032 03ec 1D       		.byte	29
+ 1033 03ed 1C       		.byte	28
+ 1034 03ee 1E       		.byte	30
+ 1035 03ef 23       		.byte	35
+ 1036 03f0 1F       		.byte	31
+ 1037 03f1 E2       		.byte	-30
+ 1038 03f2 20       		.byte	32
+ 1039 03f3 03       		.byte	3
+ 1040 03f4 21       		.byte	33
+ 1041 03f5 10       		.byte	16
+ 1042 03f6 24       		.byte	36
+ 1043 03f7 04       		.byte	4
+ 1044 03f8 25       		.byte	37
+ 1045 03f9 FF       		.byte	-1
+ 1046 03fa 28       		.byte	40
+ 1047 03fb 0C       		.byte	12
+ 1048 03fc 29       		.byte	41
+ 1049 03fd E7       		.byte	-25
+ 1050 03fe 2B       		.byte	43
+ 1051 03ff 18       		.byte	24
+ 1052 0400 2D       		.byte	45
+ 1053 0401 24       		.byte	36
+ 1054 0402 30       		.byte	48
+ 1055 0403 2C       		.byte	44
+ 1056 0404 31       		.byte	49
+ 1057 0405 1F       		.byte	31
+ 1058 0406 32       		.byte	50
+ 1059 0407 10       		.byte	16
+ 1060 0408 33       		.byte	51
+ 1061 0409 60       		.byte	96
+ 1062 040a 34       		.byte	52
+ 1063 040b 0F       		.byte	15
+ 1064 040c 36       		.byte	54
+ 1065 040d 4C       		.byte	76
+ 1066 040e 37       		.byte	55
+ 1067 040f 80       		.byte	-128
+ 1068 0410 39       		.byte	57
+ 1069 0411 80       		.byte	-128
+ 1070 0412 3A       		.byte	58
+ 1071 0413 22       		.byte	34
+ 1072 0414 3B       		.byte	59
+ 1073 0415 22       		.byte	34
+ 1074 0416 3E       		.byte	62
+ 1075 0417 04       		.byte	4
+ 1076 0418 40       		.byte	64
+ 1077 0419 03       		.byte	3
+ 1078 041a 45       		.byte	69
+ 1079 041b 40       		.byte	64
+ 1080 041c 49       		.byte	73
+ 1081 041d FF       		.byte	-1
+ 1082 041e 4A       		.byte	74
+ 1083 041f 07       		.byte	7
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\cc4BGC3g.s 			page 20
+
+
+ 1084 0420 4B       		.byte	75
+ 1085 0421 FF       		.byte	-1
+ 1086 0422 4C       		.byte	76
+ 1087 0423 40       		.byte	64
+ 1088 0424 4D       		.byte	77
+ 1089 0425 20       		.byte	32
+ 1090 0426 4E       		.byte	78
+ 1091 0427 F0       		.byte	-16
+ 1092 0428 4F       		.byte	79
+ 1093 0429 05       		.byte	5
+ 1094 042a 50       		.byte	80
+ 1095 042b 08       		.byte	8
+ 1096 042c 56       		.byte	86
+ 1097 042d 02       		.byte	2
+ 1098 042e 57       		.byte	87
+ 1099 042f 11       		.byte	17
+ 1100 0430 58       		.byte	88
+ 1101 0431 04       		.byte	4
+ 1102 0432 59       		.byte	89
+ 1103 0433 04       		.byte	4
+ 1104 0434 5A       		.byte	90
+ 1105 0435 04       		.byte	4
+ 1106 0436 5B       		.byte	91
+ 1107 0437 04       		.byte	4
+ 1108 0438 5C       		.byte	92
+ 1109 0439 11       		.byte	17
+ 1110 043a 5D       		.byte	93
+ 1111 043b 10       		.byte	16
+ 1112 043c 5F       		.byte	95
+ 1113 043d 01       		.byte	1
+ 1114 043e 60       		.byte	96
+ 1115 043f 40       		.byte	64
+ 1116 0440 61       		.byte	97
+ 1117 0441 A8       		.byte	-88
+ 1118 0442 62       		.byte	98
+ 1119 0443 40       		.byte	64
+ 1120 0444 63       		.byte	99
+ 1121 0445 20       		.byte	32
+ 1122 0446 80       		.byte	-128
+ 1123 0447 14       		.byte	20
+ 1124 0448 81       		.byte	-127
+ 1125 0449 10       		.byte	16
+ 1126 044a 82       		.byte	-126
+ 1127 044b 09       		.byte	9
+ 1128 044c 84       		.byte	-124
+ 1129 044d 07       		.byte	7
+ 1130 044e 86       		.byte	-122
+ 1131 044f 08       		.byte	8
+ 1132 0450 8E       		.byte	-114
+ 1133 0451 10       		.byte	16
+ 1134 0452 8F       		.byte	-113
+ 1135 0453 03       		.byte	3
+ 1136 0454 91       		.byte	-111
+ 1137 0455 40       		.byte	64
+ 1138 0456 94       		.byte	-108
+ 1139 0457 07       		.byte	7
+ 1140 0458 96       		.byte	-106
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\cc4BGC3g.s 			page 21
+
+
+ 1141 0459 18       		.byte	24
+ 1142 045a 99       		.byte	-103
+ 1143 045b 09       		.byte	9
+ 1144 045c 9B       		.byte	-101
+ 1145 045d 10       		.byte	16
+ 1146 045e A1       		.byte	-95
+ 1147 045f 1C       		.byte	28
+ 1148 0460 A3       		.byte	-93
+ 1149 0461 22       		.byte	34
+ 1150 0462 A5       		.byte	-91
+ 1151 0463 2C       		.byte	44
+ 1152 0464 A6       		.byte	-90
+ 1153 0465 0B       		.byte	11
+ 1154 0466 A7       		.byte	-89
+ 1155 0467 11       		.byte	17
+ 1156 0468 A8       		.byte	-88
+ 1157 0469 06       		.byte	6
+ 1158 046a A9       		.byte	-87
+ 1159 046b 30       		.byte	48
+ 1160 046c AA       		.byte	-86
+ 1161 046d 09       		.byte	9
+ 1162 046e AB       		.byte	-85
+ 1163 046f 0C       		.byte	12
+ 1164 0470 AD       		.byte	-83
+ 1165 0471 14       		.byte	20
+ 1166 0472 B0       		.byte	-80
+ 1167 0473 01       		.byte	1
+ 1168 0474 B2       		.byte	-78
+ 1169 0475 1E       		.byte	30
+ 1170 0476 B5       		.byte	-75
+ 1171 0477 60       		.byte	96
+ 1172 0478 B7       		.byte	-73
+ 1173 0479 1F       		.byte	31
+ 1174 047a B9       		.byte	-71
+ 1175 047b 20       		.byte	32
+ 1176 047c BA       		.byte	-70
+ 1177 047d 08       		.byte	8
+ 1178 047e BE       		.byte	-66
+ 1179 047f 01       		.byte	1
+ 1180 0480 D8       		.byte	-40
+ 1181 0481 04       		.byte	4
+ 1182 0482 D9       		.byte	-39
+ 1183 0483 04       		.byte	4
+ 1184 0484 DC       		.byte	-36
+ 1185 0485 02       		.byte	2
+ 1186 0486 DF       		.byte	-33
+ 1187 0487 01       		.byte	1
+ 1188 0488 00       		.byte	0
+ 1189 0489 04       		.byte	4
+ 1190 048a 02       		.byte	2
+ 1191 048b 80       		.byte	-128
+ 1192 048c 03       		.byte	3
+ 1193 048d 82       		.byte	-126
+ 1194 048e 05       		.byte	5
+ 1195 048f 11       		.byte	17
+ 1196 0490 06       		.byte	6
+ 1197 0491 02       		.byte	2
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\cc4BGC3g.s 			page 22
+
+
+ 1198 0492 07       		.byte	7
+ 1199 0493 14       		.byte	20
+ 1200 0494 0A       		.byte	10
+ 1201 0495 10       		.byte	16
+ 1202 0496 0D       		.byte	13
+ 1203 0497 24       		.byte	36
+ 1204 0498 0E       		.byte	14
+ 1205 0499 46       		.byte	70
+ 1206 049a 10       		.byte	16
+ 1207 049b 28       		.byte	40
+ 1208 049c 16       		.byte	22
+ 1209 049d 80       		.byte	-128
+ 1210 049e 17       		.byte	23
+ 1211 049f 28       		.byte	40
+ 1212 04a0 18       		.byte	24
+ 1213 04a1 20       		.byte	32
+ 1214 04a2 1A       		.byte	26
+ 1215 04a3 90       		.byte	-112
+ 1216 04a4 1D       		.byte	29
+ 1217 04a5 10       		.byte	16
+ 1218 04a6 1E       		.byte	30
+ 1219 04a7 61       		.byte	97
+ 1220 04a8 20       		.byte	32
+ 1221 04a9 08       		.byte	8
+ 1222 04aa 21       		.byte	33
+ 1223 04ab 40       		.byte	64
+ 1224 04ac 22       		.byte	34
+ 1225 04ad 10       		.byte	16
+ 1226 04ae 23       		.byte	35
+ 1227 04af 01       		.byte	1
+ 1228 04b0 25       		.byte	37
+ 1229 04b1 20       		.byte	32
+ 1230 04b2 26       		.byte	38
+ 1231 04b3 05       		.byte	5
+ 1232 04b4 27       		.byte	39
+ 1233 04b5 41       		.byte	65
+ 1234 04b6 28       		.byte	40
+ 1235 04b7 64       		.byte	100
+ 1236 04b8 2B       		.byte	43
+ 1237 04b9 01       		.byte	1
+ 1238 04ba 2D       		.byte	45
+ 1239 04bb 80       		.byte	-128
+ 1240 04bc 2E       		.byte	46
+ 1241 04bd 06       		.byte	6
+ 1242 04be 2F       		.byte	47
+ 1243 04bf 04       		.byte	4
+ 1244 04c0 31       		.byte	49
+ 1245 04c1 02       		.byte	2
+ 1246 04c2 32       		.byte	50
+ 1247 04c3 10       		.byte	16
+ 1248 04c4 35       		.byte	53
+ 1249 04c5 09       		.byte	9
+ 1250 04c6 37       		.byte	55
+ 1251 04c7 50       		.byte	80
+ 1252 04c8 39       		.byte	57
+ 1253 04c9 81       		.byte	-127
+ 1254 04ca 3C       		.byte	60
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\cc4BGC3g.s 			page 23
+
+
+ 1255 04cb 02       		.byte	2
+ 1256 04cc 3D       		.byte	61
+ 1257 04cd 20       		.byte	32
+ 1258 04ce 3E       		.byte	62
+ 1259 04cf 48       		.byte	72
+ 1260 04d0 45       		.byte	69
+ 1261 04d1 08       		.byte	8
+ 1262 04d2 4D       		.byte	77
+ 1263 04d3 01       		.byte	1
+ 1264 04d4 55       		.byte	85
+ 1265 04d5 02       		.byte	2
+ 1266 04d6 56       		.byte	86
+ 1267 04d7 01       		.byte	1
+ 1268 04d8 59       		.byte	89
+ 1269 04d9 01       		.byte	1
+ 1270 04da 5A       		.byte	90
+ 1271 04db 02       		.byte	2
+ 1272 04dc 5E       		.byte	94
+ 1273 04dd 20       		.byte	32
+ 1274 04de 65       		.byte	101
+ 1275 04df 10       		.byte	16
+ 1276 04e0 67       		.byte	103
+ 1277 04e1 08       		.byte	8
+ 1278 04e2 6D       		.byte	109
+ 1279 04e3 14       		.byte	20
+ 1280 04e4 6E       		.byte	110
+ 1281 04e5 80       		.byte	-128
+ 1282 04e6 6F       		.byte	111
+ 1283 04e7 08       		.byte	8
+ 1284 04e8 75       		.byte	117
+ 1285 04e9 08       		.byte	8
+ 1286 04ea 76       		.byte	118
+ 1287 04eb 0A       		.byte	10
+ 1288 04ec 77       		.byte	119
+ 1289 04ed 28       		.byte	40
+ 1290 04ee 87       		.byte	-121
+ 1291 04ef 40       		.byte	64
+ 1292 04f0 90       		.byte	-112
+ 1293 04f1 0C       		.byte	12
+ 1294 04f2 93       		.byte	-109
+ 1295 04f3 04       		.byte	4
+ 1296 04f4 95       		.byte	-107
+ 1297 04f5 04       		.byte	4
+ 1298 04f6 96       		.byte	-106
+ 1299 04f7 93       		.byte	-109
+ 1300 04f8 97       		.byte	-105
+ 1301 04f9 01       		.byte	1
+ 1302 04fa 98       		.byte	-104
+ 1303 04fb 80       		.byte	-128
+ 1304 04fc 99       		.byte	-103
+ 1305 04fd 04       		.byte	4
+ 1306 04fe 9B       		.byte	-101
+ 1307 04ff 10       		.byte	16
+ 1308 0500 9D       		.byte	-99
+ 1309 0501 80       		.byte	-128
+ 1310 0502 9F       		.byte	-97
+ 1311 0503 05       		.byte	5
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\cc4BGC3g.s 			page 24
+
+
+ 1312 0504 A0       		.byte	-96
+ 1313 0505 08       		.byte	8
+ 1314 0506 A1       		.byte	-95
+ 1315 0507 10       		.byte	16
+ 1316 0508 A3       		.byte	-93
+ 1317 0509 82       		.byte	-126
+ 1318 050a A4       		.byte	-92
+ 1319 050b A0       		.byte	-96
+ 1320 050c A5       		.byte	-91
+ 1321 050d 20       		.byte	32
+ 1322 050e A6       		.byte	-90
+ 1323 050f 06       		.byte	6
+ 1324 0510 A7       		.byte	-89
+ 1325 0511 08       		.byte	8
+ 1326 0512 A8       		.byte	-88
+ 1327 0513 08       		.byte	8
+ 1328 0514 AA       		.byte	-86
+ 1329 0515 02       		.byte	2
+ 1330 0516 AB       		.byte	-85
+ 1331 0517 20       		.byte	32
+ 1332 0518 B0       		.byte	-80
+ 1333 0519 02       		.byte	2
+ 1334 051a B2       		.byte	-78
+ 1335 051b 20       		.byte	32
+ 1336 051c B4       		.byte	-76
+ 1337 051d 20       		.byte	32
+ 1338 051e B5       		.byte	-75
+ 1339 051f 42       		.byte	66
+ 1340 0520 B6       		.byte	-74
+ 1341 0521 04       		.byte	4
+ 1342 0522 C0       		.byte	-64
+ 1343 0523 FD       		.byte	-3
+ 1344 0524 C2       		.byte	-62
+ 1345 0525 F4       		.byte	-12
+ 1346 0526 C4       		.byte	-60
+ 1347 0527 76       		.byte	118
+ 1348 0528 CA       		.byte	-54
+ 1349 0529 FF       		.byte	-1
+ 1350 052a CC       		.byte	-52
+ 1351 052b F5       		.byte	-11
+ 1352 052c CE       		.byte	-50
+ 1353 052d F9       		.byte	-7
+ 1354 052e D0       		.byte	-48
+ 1355 052f 40       		.byte	64
+ 1356 0530 D6       		.byte	-42
+ 1357 0531 20       		.byte	32
+ 1358 0532 E6       		.byte	-26
+ 1359 0533 20       		.byte	32
+ 1360 0534 00       		.byte	0
+ 1361 0535 10       		.byte	16
+ 1362 0536 04       		.byte	4
+ 1363 0537 0C       		.byte	12
+ 1364 0538 05       		.byte	5
+ 1365 0539 06       		.byte	6
+ 1366 053a 06       		.byte	6
+ 1367 053b 11       		.byte	17
+ 1368 053c 09       		.byte	9
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\cc4BGC3g.s 			page 25
+
+
+ 1369 053d 06       		.byte	6
+ 1370 053e 0C       		.byte	12
+ 1371 053f 09       		.byte	9
+ 1372 0540 0E       		.byte	14
+ 1373 0541 10       		.byte	16
+ 1374 0542 10       		.byte	16
+ 1375 0543 20       		.byte	32
+ 1376 0544 12       		.byte	18
+ 1377 0545 03       		.byte	3
+ 1378 0546 14       		.byte	20
+ 1379 0547 10       		.byte	16
+ 1380 0548 16       		.byte	22
+ 1381 0549 0C       		.byte	12
+ 1382 054a 18       		.byte	24
+ 1383 054b 14       		.byte	20
+ 1384 054c 1B       		.byte	27
+ 1385 054d 02       		.byte	2
+ 1386 054e 20       		.byte	32
+ 1387 054f 1C       		.byte	28
+ 1388 0550 21       		.byte	33
+ 1389 0551 04       		.byte	4
+ 1390 0552 22       		.byte	34
+ 1391 0553 02       		.byte	2
+ 1392 0554 25       		.byte	37
+ 1393 0555 08       		.byte	8
+ 1394 0556 2F       		.byte	47
+ 1395 0557 01       		.byte	1
+ 1396 0558 30       		.byte	48
+ 1397 0559 1F       		.byte	31
+ 1398 055a 31       		.byte	49
+ 1399 055b 06       		.byte	6
+ 1400 055c 32       		.byte	50
+ 1401 055d 20       		.byte	32
+ 1402 055e 33       		.byte	51
+ 1403 055f 08       		.byte	8
+ 1404 0560 37       		.byte	55
+ 1405 0561 01       		.byte	1
+ 1406 0562 39       		.byte	57
+ 1407 0563 02       		.byte	2
+ 1408 0564 3E       		.byte	62
+ 1409 0565 04       		.byte	4
+ 1410 0566 3F       		.byte	63
+ 1411 0567 05       		.byte	5
+ 1412 0568 40       		.byte	64
+ 1413 0569 04       		.byte	4
+ 1414 056a 46       		.byte	70
+ 1415 056b 04       		.byte	4
+ 1416 056c 49       		.byte	73
+ 1417 056d FF       		.byte	-1
+ 1418 056e 4A       		.byte	74
+ 1419 056f 07       		.byte	7
+ 1420 0570 4B       		.byte	75
+ 1421 0571 FF       		.byte	-1
+ 1422 0572 4C       		.byte	76
+ 1423 0573 40       		.byte	64
+ 1424 0574 4D       		.byte	77
+ 1425 0575 20       		.byte	32
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\cc4BGC3g.s 			page 26
+
+
+ 1426 0576 4E       		.byte	78
+ 1427 0577 F0       		.byte	-16
+ 1428 0578 4F       		.byte	79
+ 1429 0579 05       		.byte	5
+ 1430 057a 50       		.byte	80
+ 1431 057b 08       		.byte	8
+ 1432 057c 54       		.byte	84
+ 1433 057d 01       		.byte	1
+ 1434 057e 56       		.byte	86
+ 1435 057f 04       		.byte	4
+ 1436 0580 58       		.byte	88
+ 1437 0581 04       		.byte	4
+ 1438 0582 59       		.byte	89
+ 1439 0583 04       		.byte	4
+ 1440 0584 5A       		.byte	90
+ 1441 0585 04       		.byte	4
+ 1442 0586 5B       		.byte	91
+ 1443 0587 04       		.byte	4
+ 1444 0588 5C       		.byte	92
+ 1445 0589 12       		.byte	18
+ 1446 058a 5D       		.byte	93
+ 1447 058b 12       		.byte	18
+ 1448 058c 5F       		.byte	95
+ 1449 058d 01       		.byte	1
+ 1450 058e 60       		.byte	96
+ 1451 058f 40       		.byte	64
+ 1452 0590 61       		.byte	97
+ 1453 0591 A8       		.byte	-88
+ 1454 0592 62       		.byte	98
+ 1455 0593 40       		.byte	64
+ 1456 0594 63       		.byte	99
+ 1457 0595 20       		.byte	32
+ 1458 0596 82       		.byte	-126
+ 1459 0597 02       		.byte	2
+ 1460 0598 83       		.byte	-125
+ 1461 0599 80       		.byte	-128
+ 1462 059a 84       		.byte	-124
+ 1463 059b 0E       		.byte	14
+ 1464 059c 87       		.byte	-121
+ 1465 059d C8       		.byte	-56
+ 1466 059e 88       		.byte	-120
+ 1467 059f 0E       		.byte	14
+ 1468 05a0 8E       		.byte	-114
+ 1469 05a1 06       		.byte	6
+ 1470 05a2 90       		.byte	-112
+ 1471 05a3 10       		.byte	16
+ 1472 05a4 91       		.byte	-111
+ 1473 05a5 CA       		.byte	-54
+ 1474 05a6 93       		.byte	-109
+ 1475 05a7 34       		.byte	52
+ 1476 05a8 94       		.byte	-108
+ 1477 05a9 01       		.byte	1
+ 1478 05aa 95       		.byte	-107
+ 1479 05ab 13       		.byte	19
+ 1480 05ac 97       		.byte	-105
+ 1481 05ad E4       		.byte	-28
+ 1482 05ae 99       		.byte	-103
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\cc4BGC3g.s 			page 27
+
+
+ 1483 05af 13       		.byte	19
+ 1484 05b0 9B       		.byte	-101
+ 1485 05b1 6C       		.byte	108
+ 1486 05b2 A0       		.byte	-96
+ 1487 05b3 08       		.byte	8
+ 1488 05b4 A2       		.byte	-94
+ 1489 05b5 02       		.byte	2
+ 1490 05b6 A3       		.byte	-93
+ 1491 05b7 35       		.byte	53
+ 1492 05b8 A4       		.byte	-92
+ 1493 05b9 10       		.byte	16
+ 1494 05ba A8       		.byte	-88
+ 1495 05bb 10       		.byte	16
+ 1496 05bc AD       		.byte	-83
+ 1497 05bd 03       		.byte	3
+ 1498 05be AF       		.byte	-81
+ 1499 05bf 04       		.byte	4
+ 1500 05c0 B0       		.byte	-80
+ 1501 05c1 02       		.byte	2
+ 1502 05c2 B2       		.byte	-78
+ 1503 05c3 0C       		.byte	12
+ 1504 05c4 B3       		.byte	-77
+ 1505 05c5 0F       		.byte	15
+ 1506 05c6 B4       		.byte	-76
+ 1507 05c7 01       		.byte	1
+ 1508 05c8 B5       		.byte	-75
+ 1509 05c9 A8       		.byte	-88
+ 1510 05ca B6       		.byte	-74
+ 1511 05cb 10       		.byte	16
+ 1512 05cc B7       		.byte	-73
+ 1513 05cd F0       		.byte	-16
+ 1514 05ce B8       		.byte	-72
+ 1515 05cf 08       		.byte	8
+ 1516 05d0 BB       		.byte	-69
+ 1517 05d1 A8       		.byte	-88
+ 1518 05d2 BE       		.byte	-66
+ 1519 05d3 15       		.byte	21
+ 1520 05d4 C0       		.byte	-64
+ 1521 05d5 21       		.byte	33
+ 1522 05d6 C1       		.byte	-63
+ 1523 05d7 03       		.byte	3
+ 1524 05d8 C6       		.byte	-58
+ 1525 05d9 0C       		.byte	12
+ 1526 05da C7       		.byte	-57
+ 1527 05db BE       		.byte	-66
+ 1528 05dc C8       		.byte	-56
+ 1529 05dd 34       		.byte	52
+ 1530 05de C9       		.byte	-55
+ 1531 05df FF       		.byte	-1
+ 1532 05e0 CA       		.byte	-54
+ 1533 05e1 FF       		.byte	-1
+ 1534 05e2 CB       		.byte	-53
+ 1535 05e3 FF       		.byte	-1
+ 1536 05e4 CE       		.byte	-50
+ 1537 05e5 F0       		.byte	-16
+ 1538 05e6 CF       		.byte	-49
+ 1539 05e7 44       		.byte	68
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\cc4BGC3g.s 			page 28
+
+
+ 1540 05e8 D0       		.byte	-48
+ 1541 05e9 0C       		.byte	12
+ 1542 05ea D4       		.byte	-44
+ 1543 05eb 01       		.byte	1
+ 1544 05ec D6       		.byte	-42
+ 1545 05ed 04       		.byte	4
+ 1546 05ee D8       		.byte	-40
+ 1547 05ef 04       		.byte	4
+ 1548 05f0 D9       		.byte	-39
+ 1549 05f1 04       		.byte	4
+ 1550 05f2 DA       		.byte	-38
+ 1551 05f3 04       		.byte	4
+ 1552 05f4 DB       		.byte	-37
+ 1553 05f5 04       		.byte	4
+ 1554 05f6 DC       		.byte	-36
+ 1555 05f7 01       		.byte	1
+ 1556 05f8 DF       		.byte	-33
+ 1557 05f9 01       		.byte	1
+ 1558 05fa E6       		.byte	-26
+ 1559 05fb C0       		.byte	-64
+ 1560 05fc EA       		.byte	-22
+ 1561 05fd 40       		.byte	64
+ 1562 05fe EB       		.byte	-21
+ 1563 05ff 02       		.byte	2
+ 1564 0600 00       		.byte	0
+ 1565 0601 04       		.byte	4
+ 1566 0602 02       		.byte	2
+ 1567 0603 40       		.byte	64
+ 1568 0604 03       		.byte	3
+ 1569 0605 02       		.byte	2
+ 1570 0606 06       		.byte	6
+ 1571 0607 81       		.byte	-127
+ 1572 0608 07       		.byte	7
+ 1573 0609 14       		.byte	20
+ 1574 060a 0A       		.byte	10
+ 1575 060b 93       		.byte	-109
+ 1576 060c 0B       		.byte	11
+ 1577 060d 04       		.byte	4
+ 1578 060e 0C       		.byte	12
+ 1579 060f 08       		.byte	8
+ 1580 0610 0E       		.byte	14
+ 1581 0611 80       		.byte	-128
+ 1582 0612 12       		.byte	18
+ 1583 0613 80       		.byte	-128
+ 1584 0614 14       		.byte	20
+ 1585 0615 40       		.byte	64
+ 1586 0616 15       		.byte	21
+ 1587 0617 14       		.byte	20
+ 1588 0618 17       		.byte	23
+ 1589 0619 01       		.byte	1
+ 1590 061a 19       		.byte	25
+ 1591 061b 08       		.byte	8
+ 1592 061c 1A       		.byte	26
+ 1593 061d 80       		.byte	-128
+ 1594 061e 1D       		.byte	29
+ 1595 061f 08       		.byte	8
+ 1596 0620 1E       		.byte	30
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\cc4BGC3g.s 			page 29
+
+
+ 1597 0621 45       		.byte	69
+ 1598 0622 20       		.byte	32
+ 1599 0623 42       		.byte	66
+ 1600 0624 22       		.byte	34
+ 1601 0625 04       		.byte	4
+ 1602 0626 27       		.byte	39
+ 1603 0627 15       		.byte	21
+ 1604 0628 29       		.byte	41
+ 1605 0629 84       		.byte	-124
+ 1606 062a 2B       		.byte	43
+ 1607 062b 80       		.byte	-128
+ 1608 062c 2E       		.byte	46
+ 1609 062d 82       		.byte	-126
+ 1610 062e 30       		.byte	48
+ 1611 062f 20       		.byte	32
+ 1612 0630 37       		.byte	55
+ 1613 0631 15       		.byte	21
+ 1614 0632 38       		.byte	56
+ 1615 0633 24       		.byte	36
+ 1616 0634 3C       		.byte	60
+ 1617 0635 08       		.byte	8
+ 1618 0636 3D       		.byte	61
+ 1619 0637 01       		.byte	1
+ 1620 0638 40       		.byte	64
+ 1621 0639 40       		.byte	64
+ 1622 063a 44       		.byte	68
+ 1623 063b 24       		.byte	36
+ 1624 063c 46       		.byte	70
+ 1625 063d 03       		.byte	3
+ 1626 063e 47       		.byte	71
+ 1627 063f 14       		.byte	20
+ 1628 0640 48       		.byte	72
+ 1629 0641 20       		.byte	32
+ 1630 0642 50       		.byte	80
+ 1631 0643 80       		.byte	-128
+ 1632 0644 52       		.byte	82
+ 1633 0645 40       		.byte	64
+ 1634 0646 54       		.byte	84
+ 1635 0647 08       		.byte	8
+ 1636 0648 56       		.byte	86
+ 1637 0649 80       		.byte	-128
+ 1638 064a 57       		.byte	87
+ 1639 064b 01       		.byte	1
+ 1640 064c 58       		.byte	88
+ 1641 064d 82       		.byte	-126
+ 1642 064e 59       		.byte	89
+ 1643 064f 20       		.byte	32
+ 1644 0650 5A       		.byte	90
+ 1645 0651 08       		.byte	8
+ 1646 0652 5E       		.byte	94
+ 1647 0653 44       		.byte	68
+ 1648 0654 5F       		.byte	95
+ 1649 0655 21       		.byte	33
+ 1650 0656 62       		.byte	98
+ 1651 0657 02       		.byte	2
+ 1652 0658 67       		.byte	103
+ 1653 0659 80       		.byte	-128
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\cc4BGC3g.s 			page 30
+
+
+ 1654 065a 80       		.byte	-128
+ 1655 065b 02       		.byte	2
+ 1656 065c 81       		.byte	-127
+ 1657 065d 04       		.byte	4
+ 1658 065e 89       		.byte	-119
+ 1659 065f 08       		.byte	8
+ 1660 0660 8A       		.byte	-118
+ 1661 0661 80       		.byte	-128
+ 1662 0662 8B       		.byte	-117
+ 1663 0663 20       		.byte	32
+ 1664 0664 8C       		.byte	-116
+ 1665 0665 0C       		.byte	12
+ 1666 0666 8D       		.byte	-115
+ 1667 0667 20       		.byte	32
+ 1668 0668 8F       		.byte	-113
+ 1669 0669 01       		.byte	1
+ 1670 066a 90       		.byte	-112
+ 1671 066b 2C       		.byte	44
+ 1672 066c 91       		.byte	-111
+ 1673 066d 15       		.byte	21
+ 1674 066e 92       		.byte	-110
+ 1675 066f 10       		.byte	16
+ 1676 0670 93       		.byte	-109
+ 1677 0671 04       		.byte	4
+ 1678 0672 96       		.byte	-106
+ 1679 0673 02       		.byte	2
+ 1680 0674 97       		.byte	-105
+ 1681 0675 80       		.byte	-128
+ 1682 0676 98       		.byte	-104
+ 1683 0677 80       		.byte	-128
+ 1684 0678 99       		.byte	-103
+ 1685 0679 84       		.byte	-124
+ 1686 067a 9A       		.byte	-102
+ 1687 067b 01       		.byte	1
+ 1688 067c 9C       		.byte	-100
+ 1689 067d 64       		.byte	100
+ 1690 067e A0       		.byte	-96
+ 1691 067f 04       		.byte	4
+ 1692 0680 A2       		.byte	-94
+ 1693 0681 C0       		.byte	-64
+ 1694 0682 A3       		.byte	-93
+ 1695 0683 82       		.byte	-126
+ 1696 0684 A4       		.byte	-92
+ 1697 0685 A1       		.byte	-95
+ 1698 0686 A5       		.byte	-91
+ 1699 0687 08       		.byte	8
+ 1700 0688 A6       		.byte	-90
+ 1701 0689 02       		.byte	2
+ 1702 068a A7       		.byte	-89
+ 1703 068b 01       		.byte	1
+ 1704 068c B1       		.byte	-79
+ 1705 068d 84       		.byte	-124
+ 1706 068e B5       		.byte	-75
+ 1707 068f 10       		.byte	16
+ 1708 0690 B6       		.byte	-74
+ 1709 0691 80       		.byte	-128
+ 1710 0692 C0       		.byte	-64
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\cc4BGC3g.s 			page 31
+
+
+ 1711 0693 FD       		.byte	-3
+ 1712 0694 C2       		.byte	-62
+ 1713 0695 3E       		.byte	62
+ 1714 0696 C4       		.byte	-60
+ 1715 0697 78       		.byte	120
+ 1716 0698 CA       		.byte	-54
+ 1717 0699 9B       		.byte	-101
+ 1718 069a CC       		.byte	-52
+ 1719 069b E4       		.byte	-28
+ 1720 069c CE       		.byte	-50
+ 1721 069d C6       		.byte	-58
+ 1722 069e D0       		.byte	-48
+ 1723 069f 71       		.byte	113
+ 1724 06a0 D6       		.byte	-42
+ 1725 06a1 FF       		.byte	-1
+ 1726 06a2 D8       		.byte	-40
+ 1727 06a3 81       		.byte	-127
+ 1728 06a4 E0       		.byte	-32
+ 1729 06a5 08       		.byte	8
+ 1730 06a6 E8       		.byte	-24
+ 1731 06a7 20       		.byte	32
+ 1732 06a8 EA       		.byte	-22
+ 1733 06a9 05       		.byte	5
+ 1734 06aa 30       		.byte	48
+ 1735 06ab 02       		.byte	2
+ 1736 06ac 33       		.byte	51
+ 1737 06ad 80       		.byte	-128
+ 1738 06ae 37       		.byte	55
+ 1739 06af 28       		.byte	40
+ 1740 06b0 39       		.byte	57
+ 1741 06b1 40       		.byte	64
+ 1742 06b2 CC       		.byte	-52
+ 1743 06b3 F0       		.byte	-16
+ 1744 06b4 CE       		.byte	-50
+ 1745 06b5 10       		.byte	16
+ 1746 06b6 30       		.byte	48
+ 1747 06b7 20       		.byte	32
+ 1748 06b8 95       		.byte	-107
+ 1749 06b9 40       		.byte	64
+ 1750 06ba 9F       		.byte	-97
+ 1751 06bb 28       		.byte	40
+ 1752 06bc A4       		.byte	-92
+ 1753 06bd 02       		.byte	2
+ 1754 06be A7       		.byte	-89
+ 1755 06bf 80       		.byte	-128
+ 1756 06c0 CC       		.byte	-52
+ 1757 06c1 10       		.byte	16
+ 1758 06c2 3E       		.byte	62
+ 1759 06c3 10       		.byte	16
+ 1760 06c4 84       		.byte	-124
+ 1761 06c5 02       		.byte	2
+ 1762 06c6 87       		.byte	-121
+ 1763 06c7 80       		.byte	-128
+ 1764 06c8 95       		.byte	-107
+ 1765 06c9 40       		.byte	64
+ 1766 06ca 9F       		.byte	-97
+ 1767 06cb 28       		.byte	40
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\cc4BGC3g.s 			page 32
+
+
+ 1768 06cc A4       		.byte	-92
+ 1769 06cd 22       		.byte	34
+ 1770 06ce A7       		.byte	-89
+ 1771 06cf 80       		.byte	-128
+ 1772 06d0 CE       		.byte	-50
+ 1773 06d1 20       		.byte	32
+ 1774 06d2 E2       		.byte	-30
+ 1775 06d3 10       		.byte	16
+ 1776 06d4 E6       		.byte	-26
+ 1777 06d5 10       		.byte	16
+ 1778 06d6 84       		.byte	-124
+ 1779 06d7 20       		.byte	32
+ 1780 06d8 8F       		.byte	-113
+ 1781 06d9 20       		.byte	32
+ 1782 06da 95       		.byte	-107
+ 1783 06db 40       		.byte	64
+ 1784 06dc 96       		.byte	-106
+ 1785 06dd 10       		.byte	16
+ 1786 06de 9F       		.byte	-97
+ 1787 06df 28       		.byte	40
+ 1788 06e0 A4       		.byte	-92
+ 1789 06e1 20       		.byte	32
+ 1790 06e2 E2       		.byte	-30
+ 1791 06e3 40       		.byte	64
+ 1792 06e4 0D       		.byte	13
+ 1793 06e5 10       		.byte	16
+ 1794 06e6 5D       		.byte	93
+ 1795 06e7 02       		.byte	2
+ 1796 06e8 C2       		.byte	-62
+ 1797 06e9 01       		.byte	1
+ 1798 06ea D6       		.byte	-42
+ 1799 06eb 01       		.byte	1
+ 1800 06ec 9D       		.byte	-99
+ 1801 06ed 02       		.byte	2
+ 1802 06ee B1       		.byte	-79
+ 1803 06ef 10       		.byte	16
+ 1804 06f0 EE       		.byte	-18
+ 1805 06f1 04       		.byte	4
+ 1806 06f2 8D       		.byte	-115
+ 1807 06f3 02       		.byte	2
+ 1808 06f4 92       		.byte	-110
+ 1809 06f5 01       		.byte	1
+ 1810 06f6 9D       		.byte	-99
+ 1811 06f7 02       		.byte	2
+ 1812 06f8 AE       		.byte	-82
+ 1813 06f9 01       		.byte	1
+ 1814 06fa E0       		.byte	-32
+ 1815 06fb 02       		.byte	2
+ 1816 06fc 87       		.byte	-121
+ 1817 06fd 08       		.byte	8
+ 1818 06fe 8A       		.byte	-118
+ 1819 06ff 02       		.byte	2
+ 1820 0700 96       		.byte	-106
+ 1821 0701 10       		.byte	16
+ 1822 0702 9F       		.byte	-97
+ 1823 0703 08       		.byte	8
+ 1824 0704 A9       		.byte	-87
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\cc4BGC3g.s 			page 33
+
+
+ 1825 0705 40       		.byte	64
+ 1826 0706 E2       		.byte	-30
+ 1827 0707 10       		.byte	16
+ 1828 0708 EE       		.byte	-18
+ 1829 0709 20       		.byte	32
+ 1830 070a 13       		.byte	19
+ 1831 070b 02       		.byte	2
+ 1832 070c 16       		.byte	22
+ 1833 070d 40       		.byte	64
+ 1834 070e 7B       		.byte	123
+ 1835 070f 02       		.byte	2
+ 1836 0710 7E       		.byte	126
+ 1837 0711 02       		.byte	2
+ 1838 0712 86       		.byte	-122
+ 1839 0713 40       		.byte	64
+ 1840 0714 9F       		.byte	-97
+ 1841 0715 02       		.byte	2
+ 1842 0716 A2       		.byte	-94
+ 1843 0717 02       		.byte	2
+ 1844 0718 A3       		.byte	-93
+ 1845 0719 02       		.byte	2
+ 1846 071a AA       		.byte	-86
+ 1847 071b 10       		.byte	16
+ 1848 071c AB       		.byte	-85
+ 1849 071d 02       		.byte	2
+ 1850 071e B3       		.byte	-77
+ 1851 071f 02       		.byte	2
+ 1852 0720 C4       		.byte	-60
+ 1853 0721 30       		.byte	48
+ 1854 0722 DC       		.byte	-36
+ 1855 0723 80       		.byte	-128
+ 1856 0724 DE       		.byte	-34
+ 1857 0725 20       		.byte	32
+ 1858 0726 E0       		.byte	-32
+ 1859 0727 10       		.byte	16
+ 1860 0728 EA       		.byte	-22
+ 1861 0729 A0       		.byte	-96
+ 1862 072a 0C       		.byte	12
+ 1863 072b 04       		.byte	4
+ 1864 072c 11       		.byte	17
+ 1865 072d 08       		.byte	8
+ 1866 072e 13       		.byte	19
+ 1867 072f 20       		.byte	32
+ 1868 0730 16       		.byte	22
+ 1869 0731 80       		.byte	-128
+ 1870 0732 5A       		.byte	90
+ 1871 0733 01       		.byte	1
+ 1872 0734 78       		.byte	120
+ 1873 0735 10       		.byte	16
+ 1874 0736 7F       		.byte	127
+ 1875 0737 40       		.byte	64
+ 1876 0738 8A       		.byte	-118
+ 1877 0739 80       		.byte	-128
+ 1878 073a 92       		.byte	-110
+ 1879 073b 01       		.byte	1
+ 1880 073c C2       		.byte	-62
+ 1881 073d 04       		.byte	4
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\cc4BGC3g.s 			page 34
+
+
+ 1882 073e C4       		.byte	-60
+ 1883 073f 0E       		.byte	14
+ 1884 0740 D6       		.byte	-42
+ 1885 0741 02       		.byte	2
+ 1886 0742 DE       		.byte	-34
+ 1887 0743 03       		.byte	3
+ 1888 0744 E6       		.byte	-26
+ 1889 0745 04       		.byte	4
+ 1890 0746 7B       		.byte	123
+ 1891 0747 01       		.byte	1
+ 1892 0748 87       		.byte	-121
+ 1893 0749 40       		.byte	64
+ 1894 074a 8B       		.byte	-117
+ 1895 074b 01       		.byte	1
+ 1896 074c 97       		.byte	-105
+ 1897 074d 80       		.byte	-128
+ 1898 074e A9       		.byte	-87
+ 1899 074f 04       		.byte	4
+ 1900 0750 AB       		.byte	-85
+ 1901 0751 20       		.byte	32
+ 1902 0752 B0       		.byte	-80
+ 1903 0753 14       		.byte	20
+ 1904 0754 DC       		.byte	-36
+ 1905 0755 01       		.byte	1
+ 1906 0756 E0       		.byte	-32
+ 1907 0757 01       		.byte	1
+ 1908 0758 E8       		.byte	-24
+ 1909 0759 04       		.byte	4
+ 1910 075a EE       		.byte	-18
+ 1911 075b 01       		.byte	1
+ 1912 075c 00       		.byte	0
+ 1913 075d 07       		.byte	7
+ 1914 075e 0C       		.byte	12
+ 1915 075f 07       		.byte	7
+ 1916 0760 0E       		.byte	14
+ 1917 0761 01       		.byte	1
+ 1918 0762 10       		.byte	16
+ 1919 0763 07       		.byte	7
+ 1920 0764 1C       		.byte	28
+ 1921 0765 07       		.byte	7
+ 1922 0766 00       		.byte	0
+ 1923 0767 FF       		.byte	-1
+ 1924 0768 01       		.byte	1
+ 1925 0769 0F       		.byte	15
+ 1926 076a 03       		.byte	3
+ 1927 076b C0       		.byte	-64
+ 1928 076c 02       		.byte	2
+ 1929 076d 80       		.byte	-128
+ 1930 076e 00       		.byte	0
+ 1931 076f 00       		.byte	0
+ 1932 0770 03       		.byte	3
+ 1933 0771 00       		.byte	0
+ 1934 0772 00       		.byte	0
+ 1935 0773 00       		.byte	0
+ 1936 0774 02       		.byte	2
+ 1937 0775 10       		.byte	16
+ 1938 0776 00       		.byte	0
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\cc4BGC3g.s 			page 35
+
+
+ 1939 0777 00       		.byte	0
+ 1940 0778 5C       		.byte	92
+ 1941 0779 08       		.byte	8
+ 1942 077a 23       		.byte	35
+ 1943 077b 00       		.byte	0
+ 1944 077c 73       		.byte	115
+ 1945 077d 18       		.byte	24
+ 1946 077e 0C       		.byte	12
+ 1947 077f 00       		.byte	0
+ 1948 0780 00       		.byte	0
+ 1949 0781 60       		.byte	96
+ 1950 0782 00       		.byte	0
+ 1951 0783 00       		.byte	0
+ 1952 0784 03       		.byte	3
+ 1953 0785 00       		.byte	0
+ 1954 0786 00       		.byte	0
+ 1955 0787 66       		.byte	102
+ 1956 0788 7F       		.byte	127
+ 1957 0789 19       		.byte	25
+ 1958 078a 00       		.byte	0
+ 1959 078b E2       		.byte	-30
+ 1960 078c 1F       		.byte	31
+ 1961 078d 40       		.byte	64
+ 1962 078e 60       		.byte	96
+ 1963 078f 00       		.byte	0
+ 1964 0790 00       		.byte	0
+ 1965 0791 21       		.byte	33
+ 1966 0792 63       		.byte	99
+ 1967 0793 00       		.byte	0
+ 1968 0794 08       		.byte	8
+ 1969 0795 FF       		.byte	-1
+ 1970 0796 00       		.byte	0
+ 1971 0797 00       		.byte	0
+ 1972 0798 04       		.byte	4
+ 1973 0799 19       		.byte	25
+ 1974 079a 00       		.byte	0
+ 1975 079b E4       		.byte	-28
+ 1976 079c 0C       		.byte	12
+ 1977 079d E7       		.byte	-25
+ 1978 079e 00       		.byte	0
+ 1979 079f 18       		.byte	24
+ 1980 07a0 01       		.byte	1
+ 1981 07a1 00       		.byte	0
+ 1982 07a2 00       		.byte	0
+ 1983 07a3 01       		.byte	1
+ 1984 07a4 10       		.byte	16
+ 1985 07a5 80       		.byte	-128
+ 1986 07a6 0F       		.byte	15
+ 1987 07a7 1F       		.byte	31
+ 1988 07a8 2C       		.byte	44
+ 1989 07a9 00       		.byte	0
+ 1990 07aa 4C       		.byte	76
+ 1991 07ab 60       		.byte	96
+ 1992 07ac 00       		.byte	0
+ 1993 07ad 02       		.byte	2
+ 1994 07ae 28       		.byte	40
+ 1995 07af 28       		.byte	40
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\cc4BGC3g.s 			page 36
+
+
+ 1996 07b0 00       		.byte	0
+ 1997 07b1 00       		.byte	0
+ 1998 07b2 01       		.byte	1
+ 1999 07b3 00       		.byte	0
+ 2000 07b4 35       		.byte	53
+ 2001 07b5 02       		.byte	2
+ 2002 07b6 01       		.byte	1
+ 2003 07b7 00       		.byte	0
+ 2004 07b8 06       		.byte	6
+ 2005 07b9 00       		.byte	0
+ 2006 07ba C0       		.byte	-64
+ 2007 07bb E0       		.byte	-32
+ 2008 07bc 28       		.byte	40
+ 2009 07bd FF       		.byte	-1
+ 2010 07be FF       		.byte	-1
+ 2011 07bf FF       		.byte	-1
+ 2012 07c0 62       		.byte	98
+ 2013 07c1 A0       		.byte	-96
+ 2014 07c2 F0       		.byte	-16
+ 2015 07c3 41       		.byte	65
+ 2016 07c4 0C       		.byte	12
+ 2017 07c5 00       		.byte	0
+ 2018 07c6 00       		.byte	0
+ 2019 07c7 00       		.byte	0
+ 2020 07c8 00       		.byte	0
+ 2021 07c9 00       		.byte	0
+ 2022 07ca 02       		.byte	2
+ 2023 07cb 10       		.byte	16
+ 2024 07cc 04       		.byte	4
+ 2025 07cd 04       		.byte	4
+ 2026 07ce 04       		.byte	4
+ 2027 07cf 04       		.byte	4
+ 2028 07d0 00       		.byte	0
+ 2029 07d1 00       		.byte	0
+ 2030 07d2 00       		.byte	0
+ 2031 07d3 01       		.byte	1
+ 2032 07d4 00       		.byte	0
+ 2033 07d5 00       		.byte	0
+ 2034 07d6 00       		.byte	0
+ 2035 07d7 00       		.byte	0
+ 2036 07d8 00       		.byte	0
+ 2037 07d9 00       		.byte	0
+ 2038 07da 40       		.byte	64
+ 2039 07db 02       		.byte	2
+ 2040 07dc 00       		.byte	0
+ 2041 07dd 10       		.byte	16
+ 2042 07de 30       		.byte	48
+ 2043 07df 10       		.byte	16
+ 2044 07e0 00       		.byte	0
+ 2045 07e1 10       		.byte	16
+ 2046 07e2 10       		.byte	16
+ 2047 07e3 12       		.byte	18
+ 2048 07e4 00       		.byte	0
+ 2049 07e5 00       		.byte	0
+ 2050 07e6 00       		.byte	0
+ 2051 07e7 00       		.byte	0
+ 2052 07e8 00       		.byte	0
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\cc4BGC3g.s 			page 37
+
+
+ 2053 07e9 00       		.byte	0
+ 2054 07ea 00       		.byte	0
+ 2055 07eb 00       		.byte	0
+ 2056 07ec 00       		.byte	0
+ 2057 07ed 00       		.byte	0
+ 2058 07ee 00       		.byte	0
+ 2059 07ef 00       		.byte	0
+ 2060 07f0 00       		.byte	0
+ 2061 07f1 00       		.byte	0
+ 2062 07f2 00       		.byte	0
+ 2063 07f3 00       		.byte	0
+ 2064 07f4 A3       		.byte	-93
+ 2065 07f5 00       		.byte	0
+ 2066 07f6 00       		.byte	0
+ 2067 07f7 A0       		.byte	-96
+ 2068 07f8 A3       		.byte	-93
+ 2069 07f9 00       		.byte	0
+ 2070 07fa 83       		.byte	-125
+ 2071 07fb 00       		.byte	0
+ 2072 07fc 00       		.byte	0
+ 2073 07fd 20       		.byte	32
+ 2074 07fe 00       		.byte	0
+ 2075 07ff 00       		.byte	0
+ 2076 0800 00       		.byte	0
+ 2077 0801 20       		.byte	32
+ 2078 0802 00       		.byte	0
+ 2079 0803 10       		.byte	16
+ 2080 0804 00       		.byte	0
+ 2081 0805 00       		.byte	0
+ 2082 0806 00       		.byte	0
+ 2083 0807 00       		.byte	0
+ 2084 0808 10       		.byte	16
+ 2085 0809 00       		.byte	0
+ 2086 080a 20       		.byte	32
+ 2087 080b 10       		.byte	16
+ 2088 080c 10       		.byte	16
+ 2089 080d 00       		.byte	0
+ 2090 080e 10       		.byte	16
+ 2091 080f 00       		.byte	0
+ 2092 0810 00       		.byte	0
+ 2093 0811 00       		.byte	0
+ 2094 0812 00       		.byte	0
+ 2095 0813 00       		.byte	0
+ 2096 0814 48       		.byte	72
+ 2097 0815 00       		.byte	0
+ 2098 0816 80       		.byte	-128
+ 2099 0817 48       		.byte	72
+ 2100 0818 48       		.byte	72
+ 2101 0819 00       		.byte	0
+ 2102 081a 40       		.byte	64
+ 2103 081b 00       		.byte	0
+ 2104 081c 00       		.byte	0
+ 2105 081d 00       		.byte	0
+ 2106 081e 00       		.byte	0
+ 2107 081f 00       		.byte	0
+ 2108              		.section	.cywolatch,"a",%progbits
+ 2109              		.align	2
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\cc4BGC3g.s 			page 38
+
+
+ 2110              		.type	cy_meta_wonvl, %object
+ 2111              		.size	cy_meta_wonvl, 4
+ 2112              	cy_meta_wonvl:
+ 2113 0000 BC       		.byte	-68
+ 2114 0001 90       		.byte	-112
+ 2115 0002 AC       		.byte	-84
+ 2116 0003 AF       		.byte	-81
+ 2117              		.section	.cycustnvl,"a",%progbits
+ 2118              		.align	2
+ 2119              		.type	cy_meta_custnvl, %object
+ 2120              		.size	cy_meta_custnvl, 4
+ 2121              	cy_meta_custnvl:
+ 2122 0000 00       		.byte	0
+ 2123 0001 00       		.byte	0
+ 2124 0002 40       		.byte	64
+ 2125 0003 05       		.byte	5
+ 2126              		.section	.cymeta,"a",%progbits
+ 2127              		.align	2
+ 2128              		.type	cy_metadata, %object
+ 2129              		.size	cy_metadata, 12
+ 2130              	cy_metadata:
+ 2131 0000 00       		.byte	0
+ 2132 0001 01       		.byte	1
+ 2133 0002 2E       		.byte	46
+ 2134 0003 16       		.byte	22
+ 2135 0004 10       		.byte	16
+ 2136 0005 69       		.byte	105
+ 2137 0006 00       		.byte	0
+ 2138 0007 01       		.byte	1
+ 2139 0008 00       		.byte	0
+ 2140 0009 00       		.byte	0
+ 2141 000a 00       		.byte	0
+ 2142 000b 00       		.byte	0
+ 2143              		.section	.cyflashprotect,"a",%progbits
+ 2144              		.align	2
+ 2145              		.type	cy_meta_flashprotect, %object
+ 2146              		.size	cy_meta_flashprotect, 256
+ 2147              	cy_meta_flashprotect:
+ 2148 0000 00000000 		.space	256
+ 2148      00000000 
+ 2148      00000000 
+ 2148      00000000 
+ 2148      00000000 
+ 2149              		.text
+ 2150              	.Letext0:
+ 2151              		.file 1 ".\\Generated_Source\\PSoC5\\cymetadata.c"
+ 2152              		.file 2 ".\\Generated_Source\\PSoC5\\cytypes.h"
+ 2153              		.section	.debug_info,"",%progbits
+ 2154              	.Ldebug_info0:
+ 2155 0000 3B010000 		.4byte	0x13b
+ 2156 0004 0400     		.2byte	0x4
+ 2157 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 2158 000a 04       		.byte	0x4
+ 2159 000b 01       		.uleb128 0x1
+ 2160 000c E0000000 		.4byte	.LASF18
+ 2161 0010 01       		.byte	0x1
+ 2162 0011 4C000000 		.4byte	.LASF19
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\cc4BGC3g.s 			page 39
+
+
+ 2163 0015 00000000 		.4byte	.LASF20
+ 2164 0019 00000000 		.4byte	.Ldebug_line0
+ 2165 001d 02       		.uleb128 0x2
+ 2166 001e 01       		.byte	0x1
+ 2167 001f 06       		.byte	0x6
+ 2168 0020 EA010000 		.4byte	.LASF0
+ 2169 0024 02       		.uleb128 0x2
+ 2170 0025 01       		.byte	0x1
+ 2171 0026 08       		.byte	0x8
+ 2172 0027 84000000 		.4byte	.LASF1
+ 2173 002b 02       		.uleb128 0x2
+ 2174 002c 02       		.byte	0x2
+ 2175 002d 05       		.byte	0x5
+ 2176 002e D1010000 		.4byte	.LASF2
+ 2177 0032 02       		.uleb128 0x2
+ 2178 0033 02       		.byte	0x2
+ 2179 0034 07       		.byte	0x7
+ 2180 0035 A4000000 		.4byte	.LASF3
+ 2181 0039 02       		.uleb128 0x2
+ 2182 003a 04       		.byte	0x4
+ 2183 003b 05       		.byte	0x5
+ 2184 003c E1010000 		.4byte	.LASF4
+ 2185 0040 02       		.uleb128 0x2
+ 2186 0041 04       		.byte	0x4
+ 2187 0042 07       		.byte	0x7
+ 2188 0043 92000000 		.4byte	.LASF5
+ 2189 0047 02       		.uleb128 0x2
+ 2190 0048 08       		.byte	0x8
+ 2191 0049 05       		.byte	0x5
+ 2192 004a BE010000 		.4byte	.LASF6
+ 2193 004e 02       		.uleb128 0x2
+ 2194 004f 08       		.byte	0x8
+ 2195 0050 07       		.byte	0x7
+ 2196 0051 7B010000 		.4byte	.LASF7
+ 2197 0055 03       		.uleb128 0x3
+ 2198 0056 04       		.byte	0x4
+ 2199 0057 05       		.byte	0x5
+ 2200 0058 696E7400 		.ascii	"int\000"
+ 2201 005c 02       		.uleb128 0x2
+ 2202 005d 04       		.byte	0x4
+ 2203 005e 07       		.byte	0x7
+ 2204 005f 6E010000 		.4byte	.LASF8
+ 2205 0063 04       		.uleb128 0x4
+ 2206 0064 DB010000 		.4byte	.LASF21
+ 2207 0068 02       		.byte	0x2
+ 2208 0069 3801     		.2byte	0x138
+ 2209 006b 24000000 		.4byte	0x24
+ 2210 006f 02       		.uleb128 0x2
+ 2211 0070 04       		.byte	0x4
+ 2212 0071 04       		.byte	0x4
+ 2213 0072 7E000000 		.4byte	.LASF9
+ 2214 0076 02       		.uleb128 0x2
+ 2215 0077 08       		.byte	0x8
+ 2216 0078 04       		.byte	0x4
+ 2217 0079 B7000000 		.4byte	.LASF10
+ 2218 007d 02       		.uleb128 0x2
+ 2219 007e 01       		.byte	0x1
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\cc4BGC3g.s 			page 40
+
+
+ 2220 007f 08       		.byte	0x8
+ 2221 0080 CC010000 		.4byte	.LASF11
+ 2222 0084 05       		.uleb128 0x5
+ 2223 0085 63000000 		.4byte	0x63
+ 2224 0089 95000000 		.4byte	0x95
+ 2225 008d 06       		.uleb128 0x6
+ 2226 008e 95000000 		.4byte	0x95
+ 2227 0092 1F08     		.2byte	0x81f
+ 2228 0094 00       		.byte	0
+ 2229 0095 02       		.uleb128 0x2
+ 2230 0096 04       		.byte	0x4
+ 2231 0097 07       		.byte	0x7
+ 2232 0098 B5010000 		.4byte	.LASF12
+ 2233 009c 07       		.uleb128 0x7
+ 2234 009d CE000000 		.4byte	.LASF13
+ 2235 00a1 01       		.byte	0x1
+ 2236 00a2 1F       		.byte	0x1f
+ 2237 00a3 AD000000 		.4byte	0xad
+ 2238 00a7 05       		.uleb128 0x5
+ 2239 00a8 03       		.byte	0x3
+ 2240 00a9 00000000 		.4byte	cy_meta_configecc
+ 2241 00ad 08       		.uleb128 0x8
+ 2242 00ae 84000000 		.4byte	0x84
+ 2243 00b2 05       		.uleb128 0x5
+ 2244 00b3 63000000 		.4byte	0x63
+ 2245 00b7 C2000000 		.4byte	0xc2
+ 2246 00bb 09       		.uleb128 0x9
+ 2247 00bc 95000000 		.4byte	0x95
+ 2248 00c0 03       		.byte	0x3
+ 2249 00c1 00       		.byte	0
+ 2250 00c2 0A       		.uleb128 0xa
+ 2251 00c3 BE000000 		.4byte	.LASF14
+ 2252 00c7 01       		.byte	0x1
+ 2253 00c8 3001     		.2byte	0x130
+ 2254 00ca D4000000 		.4byte	0xd4
+ 2255 00ce 05       		.uleb128 0x5
+ 2256 00cf 03       		.byte	0x3
+ 2257 00d0 00000000 		.4byte	cy_meta_custnvl
+ 2258 00d4 08       		.uleb128 0x8
+ 2259 00d5 B2000000 		.4byte	0xb2
+ 2260 00d9 0A       		.uleb128 0xa
+ 2261 00da A7010000 		.4byte	.LASF15
+ 2262 00de 01       		.byte	0x1
+ 2263 00df 3E01     		.2byte	0x13e
+ 2264 00e1 EB000000 		.4byte	0xeb
+ 2265 00e5 05       		.uleb128 0x5
+ 2266 00e6 03       		.byte	0x3
+ 2267 00e7 00000000 		.4byte	cy_meta_wonvl
+ 2268 00eb 08       		.uleb128 0x8
+ 2269 00ec B2000000 		.4byte	0xb2
+ 2270 00f0 05       		.uleb128 0x5
+ 2271 00f1 63000000 		.4byte	0x63
+ 2272 00f5 00010000 		.4byte	0x100
+ 2273 00f9 09       		.uleb128 0x9
+ 2274 00fa 95000000 		.4byte	0x95
+ 2275 00fe FF       		.byte	0xff
+ 2276 00ff 00       		.byte	0
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\cc4BGC3g.s 			page 41
+
+
+ 2277 0100 0A       		.uleb128 0xa
+ 2278 0101 92010000 		.4byte	.LASF16
+ 2279 0105 01       		.byte	0x1
+ 2280 0106 4C01     		.2byte	0x14c
+ 2281 0108 12010000 		.4byte	0x112
+ 2282 010c 05       		.uleb128 0x5
+ 2283 010d 03       		.byte	0x3
+ 2284 010e 00000000 		.4byte	cy_meta_flashprotect
+ 2285 0112 08       		.uleb128 0x8
+ 2286 0113 F0000000 		.4byte	0xf0
+ 2287 0117 05       		.uleb128 0x5
+ 2288 0118 63000000 		.4byte	0x63
+ 2289 011c 27010000 		.4byte	0x127
+ 2290 0120 09       		.uleb128 0x9
+ 2291 0121 95000000 		.4byte	0x95
+ 2292 0125 0B       		.byte	0xb
+ 2293 0126 00       		.byte	0
+ 2294 0127 0A       		.uleb128 0xa
+ 2295 0128 72000000 		.4byte	.LASF17
+ 2296 012c 01       		.byte	0x1
+ 2297 012d 7901     		.2byte	0x179
+ 2298 012f 39010000 		.4byte	0x139
+ 2299 0133 05       		.uleb128 0x5
+ 2300 0134 03       		.byte	0x3
+ 2301 0135 00000000 		.4byte	cy_metadata
+ 2302 0139 08       		.uleb128 0x8
+ 2303 013a 17010000 		.4byte	0x117
+ 2304 013e 00       		.byte	0
+ 2305              		.section	.debug_abbrev,"",%progbits
+ 2306              	.Ldebug_abbrev0:
+ 2307 0000 01       		.uleb128 0x1
+ 2308 0001 11       		.uleb128 0x11
+ 2309 0002 01       		.byte	0x1
+ 2310 0003 25       		.uleb128 0x25
+ 2311 0004 0E       		.uleb128 0xe
+ 2312 0005 13       		.uleb128 0x13
+ 2313 0006 0B       		.uleb128 0xb
+ 2314 0007 03       		.uleb128 0x3
+ 2315 0008 0E       		.uleb128 0xe
+ 2316 0009 1B       		.uleb128 0x1b
+ 2317 000a 0E       		.uleb128 0xe
+ 2318 000b 10       		.uleb128 0x10
+ 2319 000c 17       		.uleb128 0x17
+ 2320 000d 00       		.byte	0
+ 2321 000e 00       		.byte	0
+ 2322 000f 02       		.uleb128 0x2
+ 2323 0010 24       		.uleb128 0x24
+ 2324 0011 00       		.byte	0
+ 2325 0012 0B       		.uleb128 0xb
+ 2326 0013 0B       		.uleb128 0xb
+ 2327 0014 3E       		.uleb128 0x3e
+ 2328 0015 0B       		.uleb128 0xb
+ 2329 0016 03       		.uleb128 0x3
+ 2330 0017 0E       		.uleb128 0xe
+ 2331 0018 00       		.byte	0
+ 2332 0019 00       		.byte	0
+ 2333 001a 03       		.uleb128 0x3
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\cc4BGC3g.s 			page 42
+
+
+ 2334 001b 24       		.uleb128 0x24
+ 2335 001c 00       		.byte	0
+ 2336 001d 0B       		.uleb128 0xb
+ 2337 001e 0B       		.uleb128 0xb
+ 2338 001f 3E       		.uleb128 0x3e
+ 2339 0020 0B       		.uleb128 0xb
+ 2340 0021 03       		.uleb128 0x3
+ 2341 0022 08       		.uleb128 0x8
+ 2342 0023 00       		.byte	0
+ 2343 0024 00       		.byte	0
+ 2344 0025 04       		.uleb128 0x4
+ 2345 0026 16       		.uleb128 0x16
+ 2346 0027 00       		.byte	0
+ 2347 0028 03       		.uleb128 0x3
+ 2348 0029 0E       		.uleb128 0xe
+ 2349 002a 3A       		.uleb128 0x3a
+ 2350 002b 0B       		.uleb128 0xb
+ 2351 002c 3B       		.uleb128 0x3b
+ 2352 002d 05       		.uleb128 0x5
+ 2353 002e 49       		.uleb128 0x49
+ 2354 002f 13       		.uleb128 0x13
+ 2355 0030 00       		.byte	0
+ 2356 0031 00       		.byte	0
+ 2357 0032 05       		.uleb128 0x5
+ 2358 0033 01       		.uleb128 0x1
+ 2359 0034 01       		.byte	0x1
+ 2360 0035 49       		.uleb128 0x49
+ 2361 0036 13       		.uleb128 0x13
+ 2362 0037 01       		.uleb128 0x1
+ 2363 0038 13       		.uleb128 0x13
+ 2364 0039 00       		.byte	0
+ 2365 003a 00       		.byte	0
+ 2366 003b 06       		.uleb128 0x6
+ 2367 003c 21       		.uleb128 0x21
+ 2368 003d 00       		.byte	0
+ 2369 003e 49       		.uleb128 0x49
+ 2370 003f 13       		.uleb128 0x13
+ 2371 0040 2F       		.uleb128 0x2f
+ 2372 0041 05       		.uleb128 0x5
+ 2373 0042 00       		.byte	0
+ 2374 0043 00       		.byte	0
+ 2375 0044 07       		.uleb128 0x7
+ 2376 0045 34       		.uleb128 0x34
+ 2377 0046 00       		.byte	0
+ 2378 0047 03       		.uleb128 0x3
+ 2379 0048 0E       		.uleb128 0xe
+ 2380 0049 3A       		.uleb128 0x3a
+ 2381 004a 0B       		.uleb128 0xb
+ 2382 004b 3B       		.uleb128 0x3b
+ 2383 004c 0B       		.uleb128 0xb
+ 2384 004d 49       		.uleb128 0x49
+ 2385 004e 13       		.uleb128 0x13
+ 2386 004f 3F       		.uleb128 0x3f
+ 2387 0050 19       		.uleb128 0x19
+ 2388 0051 02       		.uleb128 0x2
+ 2389 0052 18       		.uleb128 0x18
+ 2390 0053 00       		.byte	0
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\cc4BGC3g.s 			page 43
+
+
+ 2391 0054 00       		.byte	0
+ 2392 0055 08       		.uleb128 0x8
+ 2393 0056 26       		.uleb128 0x26
+ 2394 0057 00       		.byte	0
+ 2395 0058 49       		.uleb128 0x49
+ 2396 0059 13       		.uleb128 0x13
+ 2397 005a 00       		.byte	0
+ 2398 005b 00       		.byte	0
+ 2399 005c 09       		.uleb128 0x9
+ 2400 005d 21       		.uleb128 0x21
+ 2401 005e 00       		.byte	0
+ 2402 005f 49       		.uleb128 0x49
+ 2403 0060 13       		.uleb128 0x13
+ 2404 0061 2F       		.uleb128 0x2f
+ 2405 0062 0B       		.uleb128 0xb
+ 2406 0063 00       		.byte	0
+ 2407 0064 00       		.byte	0
+ 2408 0065 0A       		.uleb128 0xa
+ 2409 0066 34       		.uleb128 0x34
+ 2410 0067 00       		.byte	0
+ 2411 0068 03       		.uleb128 0x3
+ 2412 0069 0E       		.uleb128 0xe
+ 2413 006a 3A       		.uleb128 0x3a
+ 2414 006b 0B       		.uleb128 0xb
+ 2415 006c 3B       		.uleb128 0x3b
+ 2416 006d 05       		.uleb128 0x5
+ 2417 006e 49       		.uleb128 0x49
+ 2418 006f 13       		.uleb128 0x13
+ 2419 0070 3F       		.uleb128 0x3f
+ 2420 0071 19       		.uleb128 0x19
+ 2421 0072 02       		.uleb128 0x2
+ 2422 0073 18       		.uleb128 0x18
+ 2423 0074 00       		.byte	0
+ 2424 0075 00       		.byte	0
+ 2425 0076 00       		.byte	0
+ 2426              		.section	.debug_aranges,"",%progbits
+ 2427 0000 14000000 		.4byte	0x14
+ 2428 0004 0200     		.2byte	0x2
+ 2429 0006 00000000 		.4byte	.Ldebug_info0
+ 2430 000a 04       		.byte	0x4
+ 2431 000b 00       		.byte	0
+ 2432 000c 0000     		.2byte	0
+ 2433 000e 0000     		.2byte	0
+ 2434 0010 00000000 		.4byte	0
+ 2435 0014 00000000 		.4byte	0
+ 2436              		.section	.debug_line,"",%progbits
+ 2437              	.Ldebug_line0:
+ 2438 0000 4F000000 		.section	.debug_str,"MS",%progbits,1
+ 2438      02004900 
+ 2438      00000201 
+ 2438      FB0E0D00 
+ 2438      01010101 
+ 2439              	.LASF20:
+ 2440 0000 433A5C55 		.ascii	"C:\\Users\\edtriccorp\\Documents\\PSoC Creator\\Ava"
+ 2440      73657273 
+ 2440      5C656474 
+ 2440      72696363 
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\cc4BGC3g.s 			page 44
+
+
+ 2440      6F72705C 
+ 2441 002e 74617220 		.ascii	"tar Comms\\Nimbelink 4.0.cydsn\000"
+ 2441      436F6D6D 
+ 2441      735C4E69 
+ 2441      6D62656C 
+ 2441      696E6B20 
+ 2442              	.LASF19:
+ 2443 004c 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\cymetadata.c\000"
+ 2443      6E657261 
+ 2443      7465645F 
+ 2443      536F7572 
+ 2443      63655C50 
+ 2444              	.LASF17:
+ 2445 0072 63795F6D 		.ascii	"cy_metadata\000"
+ 2445      65746164 
+ 2445      61746100 
+ 2446              	.LASF9:
+ 2447 007e 666C6F61 		.ascii	"float\000"
+ 2447      7400
+ 2448              	.LASF1:
+ 2449 0084 756E7369 		.ascii	"unsigned char\000"
+ 2449      676E6564 
+ 2449      20636861 
+ 2449      7200
+ 2450              	.LASF5:
+ 2451 0092 6C6F6E67 		.ascii	"long unsigned int\000"
+ 2451      20756E73 
+ 2451      69676E65 
+ 2451      6420696E 
+ 2451      7400
+ 2452              	.LASF3:
+ 2453 00a4 73686F72 		.ascii	"short unsigned int\000"
+ 2453      7420756E 
+ 2453      7369676E 
+ 2453      65642069 
+ 2453      6E7400
+ 2454              	.LASF10:
+ 2455 00b7 646F7562 		.ascii	"double\000"
+ 2455      6C6500
+ 2456              	.LASF14:
+ 2457 00be 63795F6D 		.ascii	"cy_meta_custnvl\000"
+ 2457      6574615F 
+ 2457      63757374 
+ 2457      6E766C00 
+ 2458              	.LASF13:
+ 2459 00ce 63795F6D 		.ascii	"cy_meta_configecc\000"
+ 2459      6574615F 
+ 2459      636F6E66 
+ 2459      69676563 
+ 2459      6300
+ 2460              	.LASF18:
+ 2461 00e0 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 2461      4320342E 
+ 2461      392E3320 
+ 2461      32303135 
+ 2461      30333033 
+ 2462 0113 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\cc4BGC3g.s 			page 45
+
+
+ 2462      20726576 
+ 2462      6973696F 
+ 2462      6E203232 
+ 2462      31323230 
+ 2463 0146 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 2463      66756E63 
+ 2463      74696F6E 
+ 2463      2D736563 
+ 2463      74696F6E 
+ 2464              	.LASF8:
+ 2465 016e 756E7369 		.ascii	"unsigned int\000"
+ 2465      676E6564 
+ 2465      20696E74 
+ 2465      00
+ 2466              	.LASF7:
+ 2467 017b 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 2467      206C6F6E 
+ 2467      6720756E 
+ 2467      7369676E 
+ 2467      65642069 
+ 2468              	.LASF16:
+ 2469 0192 63795F6D 		.ascii	"cy_meta_flashprotect\000"
+ 2469      6574615F 
+ 2469      666C6173 
+ 2469      6870726F 
+ 2469      74656374 
+ 2470              	.LASF15:
+ 2471 01a7 63795F6D 		.ascii	"cy_meta_wonvl\000"
+ 2471      6574615F 
+ 2471      776F6E76 
+ 2471      6C00
+ 2472              	.LASF12:
+ 2473 01b5 73697A65 		.ascii	"sizetype\000"
+ 2473      74797065 
+ 2473      00
+ 2474              	.LASF6:
+ 2475 01be 6C6F6E67 		.ascii	"long long int\000"
+ 2475      206C6F6E 
+ 2475      6720696E 
+ 2475      7400
+ 2476              	.LASF11:
+ 2477 01cc 63686172 		.ascii	"char\000"
+ 2477      00
+ 2478              	.LASF2:
+ 2479 01d1 73686F72 		.ascii	"short int\000"
+ 2479      7420696E 
+ 2479      7400
+ 2480              	.LASF21:
+ 2481 01db 75696E74 		.ascii	"uint8\000"
+ 2481      3800
+ 2482              	.LASF4:
+ 2483 01e1 6C6F6E67 		.ascii	"long int\000"
+ 2483      20696E74 
+ 2483      00
+ 2484              	.LASF0:
+ 2485 01ea 7369676E 		.ascii	"signed char\000"
+ 2485      65642063 
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\cc4BGC3g.s 			page 46
+
+
+ 2485      68617200 
+ 2486              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

@@ -1,0 +1,80 @@
+--------------- Rebuild Started: 07/25/2016 14:49:03 Project: Nimbelink 4.0, Configuration: ARM GCC 4.9-2015-q1-update Debug ---------------
+Deleting file ".\CortexM3\ARM_GCC_493\Debug\main.o"
+Deleting file ".\CortexM3\ARM_GCC_493\Debug\nimbelink.o"
+Deleting file ".\CortexM3\ARM_GCC_493\Debug\I2C_EZPZ.o"
+Deleting file ".\CortexM3\ARM_GCC_493\Debug\L3GD20_I2C.o"
+Deleting file ".\CortexM3\ARM_GCC_493\Debug\cyfitter_cfg.o"
+Deleting file ".\CortexM3\ARM_GCC_493\Debug\cymetadata.o"
+Deleting file ".\CortexM3\ARM_GCC_493\Debug\UART.o"
+Deleting file ".\CortexM3\ARM_GCC_493\Debug\UART_PM.o"
+Deleting file ".\CortexM3\ARM_GCC_493\Debug\UART_INT.o"
+Deleting file ".\CortexM3\ARM_GCC_493\Debug\UART_BOOT.o"
+Deleting file ".\CortexM3\ARM_GCC_493\Debug\UART_PC.o"
+Deleting file ".\CortexM3\ARM_GCC_493\Debug\UART_PC_PM.o"
+Deleting file ".\CortexM3\ARM_GCC_493\Debug\UART_PC_INT.o"
+Deleting file ".\CortexM3\ARM_GCC_493\Debug\UART_PC_BOOT.o"
+Deleting file ".\CortexM3\ARM_GCC_493\Debug\Pin_1.o"
+Deleting file ".\CortexM3\ARM_GCC_493\Debug\ON_OFF.o"
+Deleting file ".\CortexM3\ARM_GCC_493\Debug\UART_IntClock.o"
+Deleting file ".\CortexM3\ARM_GCC_493\Debug\UART_PC_IntClock.o"
+Deleting file ".\CortexM3\ARM_GCC_493\Debug\Cm3Start.o"
+Deleting file ".\CortexM3\ARM_GCC_493\Debug\CyBootAsmGnu.o"
+Deleting file ".\CortexM3\ARM_GCC_493\Debug\CyDmac.o"
+Deleting file ".\CortexM3\ARM_GCC_493\Debug\CyFlash.o"
+Deleting file ".\CortexM3\ARM_GCC_493\Debug\CyLib.o"
+Deleting file ".\CortexM3\ARM_GCC_493\Debug\cyPm.o"
+Deleting file ".\CortexM3\ARM_GCC_493\Debug\CySpc.o"
+Deleting file ".\CortexM3\ARM_GCC_493\Debug\cyutils.o"
+Deleting file ".\CortexM3\ARM_GCC_493\Debug\SDA_1.o"
+Deleting file ".\CortexM3\ARM_GCC_493\Debug\SCL_1.o"
+Deleting file ".\CortexM3\ARM_GCC_493\Debug\I2C.o"
+Deleting file ".\CortexM3\ARM_GCC_493\Debug\I2C_BOOT.o"
+Deleting file ".\CortexM3\ARM_GCC_493\Debug\I2C_INT.o"
+Deleting file ".\CortexM3\ARM_GCC_493\Debug\I2C_PM.o"
+Deleting file ".\CortexM3\ARM_GCC_493\Debug\I2C_SLAVE.o"
+Deleting file ".\CortexM3\ARM_GCC_493\Debug\I2C_MASTER.o"
+Deleting file ".\CortexM3\ARM_GCC_493\Debug\RX_ISR.o"
+Deleting file ".\CortexM3\ARM_GCC_493\Debug\Nimbelink 4.0.hex"
+Deleting file ".\CortexM3\ARM_GCC_493\Debug\Nimbelink 4.0.elf"
+Deleting file ".\CortexM3\ARM_GCC_493\Debug\Nimbelink 4.0.map"
+Deleting file ".\Nimbelink 4.0.cycdx"
+Deleting file ".\Nimbelink 4.0.svd"
+Deleting file ".\Nimbelink 4.0.rpt"
+Deleting file ".\Nimbelink 4.0_timing.html"
+Deleting file ".\CortexM3\ARM_GCC_493\Debug\.deps\C_FILE.P"
+Deleting file ".\CortexM3\ARM_GCC_493\Debug\.deps\ARM_C_FILE.P"
+Deleting file ".\CortexM3\ARM_GCC_493\Debug\.deps\GNU_ARM_ASM_FILE.P"
+cydsfit.exe -.appdatapath "C:\Users\edtriccorp\AppData\Local\Cypress Semiconductor\PSoC Creator\3.3" -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -p "C:\Users\edtriccorp\Documents\PSoC Creator\Avatar Comms\Nimbelink 4.0.cydsn\Nimbelink 4.0.cyprj" -d CY8C5888LTI-LP097 -s "C:\Users\edtriccorp\Documents\PSoC Creator\Avatar Comms\Nimbelink 4.0.cydsn\Generated_Source\PSoC5" -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
+Elaborating Design...
+HDL Generation ...
+Synthesis ...
+Place and Route ...
+Tech mapping ...
+ADD: pft.M0040: information: The following 1 pin(s) will be assigned a location by the fitter: Tx_2(0)
+Analog Placement ...
+Analog Routing ...
+Analog Code Generation ...
+Digital Placement ...
+Digital Routing ...
+Bitstream Generation ...
+Static timing analysis ...
+API Generation ...
+Dependency Generation ...
+Clean Temporary Files ...
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_493\Debug/main.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects -c .\main.c -o .\CortexM3\ARM_GCC_493\Debug\main.o
+.\main.c: In function 'main':
+.\main.c:18:5: warning: implicit declaration of function 'UART_Start' [-Wimplicit-function-declaration]
+     UART_Start();
+     ^
+.\main.c:19:5: warning: implicit declaration of function 'UART_PC_Start' [-Wimplicit-function-declaration]
+     UART_PC_Start();
+     ^
+.\main.c:33:9: warning: implicit declaration of function 'Gyro_Read' [-Wimplicit-function-declaration]
+         Gyro_Read();
+         ^
+.\main.c:34:61: error: 'gyro' undeclared (first use in this function)
+         sprintf( message , "X: %d    Y: %d    Z: %d" , (int)gyro.x , (int)gyro.y , (int)gyro.z );
+                                                             ^
+.\main.c:34:61: note: each undeclared identifier is reported only once for each function it appears in
+The command 'arm-none-eabi-gcc.exe' failed with exit code '1'.
+--------------- Rebuild Failed: 07/25/2016 14:49:46 ---------------

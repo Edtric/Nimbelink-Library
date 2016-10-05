@@ -1,0 +1,5 @@
+C:\Users\edtriccorp\Documents\PSoC Creator\Avatar Comms\Nimbelink 4.0.cydsn\Nimbelink 4.0.cyprj|06714384-1643-4049-9bfd-c2cd1e14a5fc
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|21d20494-2d5a-409e-951b-fee00f0b83f9
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|2c6af670-bfdc-446c-be1a-dfdad77f3390
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|22e98b4c-e47f-48a1-8c86-0df6298d38c8
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|25257bb8-8e22-4eca-a526-7119d2481cf2

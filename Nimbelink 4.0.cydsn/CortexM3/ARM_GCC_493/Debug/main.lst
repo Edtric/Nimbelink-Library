@@ -1,0 +1,904 @@
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\ccz0heku.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.file	"main.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.section	.text.main,"ax",%progbits
+  19              		.align	2
+  20              		.global	main
+  21              		.thumb
+  22              		.thumb_func
+  23              		.type	main, %function
+  24              	main:
+  25              	.LFB63:
+  26              		.file 1 ".\\main.c"
+   1:.\main.c      **** /* ========================================
+   2:.\main.c      ****  *
+   3:.\main.c      ****  * Copyright YOUR COMPANY, THE YEAR
+   4:.\main.c      ****  * All Rights Reserved
+   5:.\main.c      ****  * UNPUBLISHED, LICENSED SOFTWARE.
+   6:.\main.c      ****  *
+   7:.\main.c      ****  * CONFIDENTIAL AND PROPRIETARY INFORMATION
+   8:.\main.c      ****  * WHICH IS THE PROPERTY OF your company.
+   9:.\main.c      ****  *
+  10:.\main.c      ****  * ========================================
+  11:.\main.c      **** */
+  12:.\main.c      **** #include "nimbelink.h"
+  13:.\main.c      **** #include "herkulex2.h"
+  14:.\main.c      **** char message[150];
+  15:.\main.c      **** 
+  16:.\main.c      **** int main()
+  17:.\main.c      **** {
+  27              		.loc 1 17 0
+  28              		.cfi_startproc
+  29              		@ Volatile: function does not return.
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32 0000 08B5     		push	{r3, lr}
+  33              		.cfi_def_cfa_offset 8
+  34              		.cfi_offset 3, -8
+  35              		.cfi_offset 14, -4
+  18:.\main.c      ****     CyGlobalIntEnable;
+  36              		.loc 1 18 0
+  37              	@ 18 ".\main.c" 1
+  38 0002 62B6     		CPSIE   i
+  39              	@ 0 "" 2
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\ccz0heku.s 			page 2
+
+
+  19:.\main.c      ****     UART_NL_Start();
+  40              		.loc 1 19 0
+  41              		.thumb
+  42 0004 FFF7FEFF 		bl	UART_NL_Start
+  43              	.LVL0:
+  20:.\main.c      ****     UART_SRV_Start();
+  44              		.loc 1 20 0
+  45 0008 FFF7FEFF 		bl	UART_SRV_Start
+  46              	.LVL1:
+  21:.\main.c      ****     UART_DEBUG_Start();
+  47              		.loc 1 21 0
+  48 000c FFF7FEFF 		bl	UART_DEBUG_Start
+  49              	.LVL2:
+  22:.\main.c      ****     CyDelay(250);
+  50              		.loc 1 22 0
+  51 0010 FA20     		movs	r0, #250
+  52 0012 FFF7FEFF 		bl	CyDelay
+  53              	.LVL3:
+  23:.\main.c      **** //    Gyro_Start( L3GD20_SENSITIVITY_250DPS );
+  24:.\main.c      ****     Servo_Start();
+  54              		.loc 1 24 0
+  55 0016 FFF7FEFF 		bl	Servo_Start
+  56              	.LVL4:
+  25:.\main.c      ****     Nimbelink_Start();
+  57              		.loc 1 25 0
+  58 001a FFF7FEFF 		bl	Nimbelink_Start
+  59              	.LVL5:
+  26:.\main.c      ****     Nimbelink_ConnectGS("4975","76.240.165.169");
+  60              		.loc 1 26 0
+  61 001e 0648     		ldr	r0, .L4
+  62 0020 0649     		ldr	r1, .L4+4
+  63 0022 FFF7FEFF 		bl	Nimbelink_ConnectGS
+  64              	.LVL6:
+  65              	.L2:
+  27:.\main.c      ****     
+  28:.\main.c      **** //    CyDelay(250);
+  29:.\main.c      **** 
+  30:.\main.c      ****     for(;;)
+  31:.\main.c      ****     {
+  32:.\main.c      **** //        Gyro_Read();
+  33:.\main.c      **** //        sprintf( message , "X: %d    Y: %d    Z: %d" , (int)gyro.x , (int)gyro.y , (int)gyro.z );
+  34:.\main.c      **** //        CyDelay(10);
+  35:.\main.c      ****         Nimbelink_GSDataXfer( 1 , "Test message" );
+  66              		.loc 1 35 0 discriminator 1
+  67 0026 0120     		movs	r0, #1
+  68 0028 0549     		ldr	r1, .L4+8
+  69 002a FFF7FEFF 		bl	Nimbelink_GSDataXfer
+  70              	.LVL7:
+  36:.\main.c      ****         CyDelay(250);
+  71              		.loc 1 36 0 discriminator 1
+  72 002e FA20     		movs	r0, #250
+  73 0030 FFF7FEFF 		bl	CyDelay
+  74              	.LVL8:
+  37:.\main.c      ****     }
+  75              		.loc 1 37 0 discriminator 1
+  76 0034 F7E7     		b	.L2
+  77              	.L5:
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\ccz0heku.s 			page 3
+
+
+  78 0036 00BF     		.align	2
+  79              	.L4:
+  80 0038 00000000 		.word	.LC0
+  81 003c 08000000 		.word	.LC1
+  82 0040 18000000 		.word	.LC2
+  83              		.cfi_endproc
+  84              	.LFE63:
+  85              		.size	main, .-main
+  86              		.comm	message,150,4
+  87              		.comm	radioSwitch,1,1
+  88              		.section	.rodata.str1.4,"aMS",%progbits,1
+  89              		.align	2
+  90              	.LC0:
+  91 0000 34393735 		.ascii	"4975\000"
+  91      00
+  92 0005 000000   		.space	3
+  93              	.LC1:
+  94 0008 37362E32 		.ascii	"76.240.165.169\000"
+  94      34302E31 
+  94      36352E31 
+  94      363900
+  95 0017 00       		.space	1
+  96              	.LC2:
+  97 0018 54657374 		.ascii	"Test message\000"
+  97      206D6573 
+  97      73616765 
+  97      00
+  98 0025 000000   		.text
+  99              	.Letext0:
+ 100              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\3.3\\psoc creator\\import\\gnu\\arm\\4.9.
+ 101              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\3.3\\psoc creator\\import\\gnu\\arm\\4.9.
+ 102              		.file 4 "Generated_Source\\PSoC5/cytypes.h"
+ 103              		.file 5 "Generated_Source\\PSoC5/core_cm3.h"
+ 104              		.file 6 ".\\nimbelink.h"
+ 105              		.file 7 "Generated_Source\\PSoC5/UART_NL.h"
+ 106              		.file 8 "Generated_Source\\PSoC5/UART_SRV.h"
+ 107              		.file 9 "Generated_Source\\PSoC5/UART_DEBUG.h"
+ 108              		.file 10 ".\\herkulex2.h"
+ 109              		.file 11 "Generated_Source\\PSoC5/CyLib.h"
+ 110              		.section	.debug_info,"",%progbits
+ 111              	.Ldebug_info0:
+ 112 0000 05020000 		.4byte	0x205
+ 113 0004 0400     		.2byte	0x4
+ 114 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 115 000a 04       		.byte	0x4
+ 116 000b 01       		.uleb128 0x1
+ 117 000c B7000000 		.4byte	.LASF28
+ 118 0010 01       		.byte	0x1
+ 119 0011 68000000 		.4byte	.LASF29
+ 120 0015 CE010000 		.4byte	.LASF30
+ 121 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 122 001d 00000000 		.4byte	0
+ 123 0021 00000000 		.4byte	.Ldebug_line0
+ 124 0025 02       		.uleb128 0x2
+ 125 0026 01       		.byte	0x1
+ 126 0027 06       		.byte	0x6
+ 127 0028 26020000 		.4byte	.LASF0
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\ccz0heku.s 			page 4
+
+
+ 128 002c 02       		.uleb128 0x2
+ 129 002d 01       		.byte	0x1
+ 130 002e 08       		.byte	0x8
+ 131 002f 5A000000 		.4byte	.LASF1
+ 132 0033 02       		.uleb128 0x2
+ 133 0034 02       		.byte	0x2
+ 134 0035 05       		.byte	0x5
+ 135 0036 A9010000 		.4byte	.LASF2
+ 136 003a 02       		.uleb128 0x2
+ 137 003b 02       		.byte	0x2
+ 138 003c 07       		.byte	0x7
+ 139 003d 83000000 		.4byte	.LASF3
+ 140 0041 03       		.uleb128 0x3
+ 141 0042 19000000 		.4byte	.LASF9
+ 142 0046 02       		.byte	0x2
+ 143 0047 3F       		.byte	0x3f
+ 144 0048 4C000000 		.4byte	0x4c
+ 145 004c 02       		.uleb128 0x2
+ 146 004d 04       		.byte	0x4
+ 147 004e 05       		.byte	0x5
+ 148 004f C5010000 		.4byte	.LASF4
+ 149 0053 02       		.uleb128 0x2
+ 150 0054 04       		.byte	0x4
+ 151 0055 07       		.byte	0x7
+ 152 0056 71000000 		.4byte	.LASF5
+ 153 005a 02       		.uleb128 0x2
+ 154 005b 08       		.byte	0x8
+ 155 005c 05       		.byte	0x5
+ 156 005d 96010000 		.4byte	.LASF6
+ 157 0061 02       		.uleb128 0x2
+ 158 0062 08       		.byte	0x8
+ 159 0063 07       		.byte	0x7
+ 160 0064 52010000 		.4byte	.LASF7
+ 161 0068 04       		.uleb128 0x4
+ 162 0069 04       		.byte	0x4
+ 163 006a 05       		.byte	0x5
+ 164 006b 696E7400 		.ascii	"int\000"
+ 165 006f 02       		.uleb128 0x2
+ 166 0070 04       		.byte	0x4
+ 167 0071 07       		.byte	0x7
+ 168 0072 45010000 		.4byte	.LASF8
+ 169 0076 03       		.uleb128 0x3
+ 170 0077 85010000 		.4byte	.LASF10
+ 171 007b 03       		.byte	0x3
+ 172 007c 2C       		.byte	0x2c
+ 173 007d 41000000 		.4byte	0x41
+ 174 0081 05       		.uleb128 0x5
+ 175 0082 B3010000 		.4byte	.LASF11
+ 176 0086 04       		.byte	0x4
+ 177 0087 3801     		.2byte	0x138
+ 178 0089 2C000000 		.4byte	0x2c
+ 179 008d 05       		.uleb128 0x5
+ 180 008e B0000000 		.4byte	.LASF12
+ 181 0092 04       		.byte	0x4
+ 182 0093 3A01     		.2byte	0x13a
+ 183 0095 53000000 		.4byte	0x53
+ 184 0099 02       		.uleb128 0x2
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\ccz0heku.s 			page 5
+
+
+ 185 009a 04       		.byte	0x4
+ 186 009b 04       		.byte	0x4
+ 187 009c 54000000 		.4byte	.LASF13
+ 188 00a0 02       		.uleb128 0x2
+ 189 00a1 08       		.byte	0x8
+ 190 00a2 04       		.byte	0x4
+ 191 00a3 A4000000 		.4byte	.LASF14
+ 192 00a7 02       		.uleb128 0x2
+ 193 00a8 01       		.byte	0x1
+ 194 00a9 08       		.byte	0x8
+ 195 00aa A4010000 		.4byte	.LASF15
+ 196 00ae 02       		.uleb128 0x2
+ 197 00af 04       		.byte	0x4
+ 198 00b0 07       		.byte	0x7
+ 199 00b1 8D010000 		.4byte	.LASF16
+ 200 00b5 06       		.uleb128 0x6
+ 201 00b6 04       		.byte	0x4
+ 202 00b7 A7000000 		.4byte	0xa7
+ 203 00bb 02       		.uleb128 0x2
+ 204 00bc 08       		.byte	0x8
+ 205 00bd 04       		.byte	0x4
+ 206 00be 1A020000 		.4byte	.LASF17
+ 207 00c2 07       		.uleb128 0x7
+ 208 00c3 AB000000 		.4byte	.LASF31
+ 209 00c7 01       		.byte	0x1
+ 210 00c8 10       		.byte	0x10
+ 211 00c9 68000000 		.4byte	0x68
+ 212 00cd 00000000 		.4byte	.LFB63
+ 213 00d1 44000000 		.4byte	.LFE63-.LFB63
+ 214 00d5 01       		.uleb128 0x1
+ 215 00d6 9C       		.byte	0x9c
+ 216 00d7 69010000 		.4byte	0x169
+ 217 00db 08       		.uleb128 0x8
+ 218 00dc 08000000 		.4byte	.LVL0
+ 219 00e0 AC010000 		.4byte	0x1ac
+ 220 00e4 08       		.uleb128 0x8
+ 221 00e5 0C000000 		.4byte	.LVL1
+ 222 00e9 B3010000 		.4byte	0x1b3
+ 223 00ed 08       		.uleb128 0x8
+ 224 00ee 10000000 		.4byte	.LVL2
+ 225 00f2 BA010000 		.4byte	0x1ba
+ 226 00f6 09       		.uleb128 0x9
+ 227 00f7 16000000 		.4byte	.LVL3
+ 228 00fb C1010000 		.4byte	0x1c1
+ 229 00ff 0A010000 		.4byte	0x10a
+ 230 0103 0A       		.uleb128 0xa
+ 231 0104 01       		.uleb128 0x1
+ 232 0105 50       		.byte	0x50
+ 233 0106 02       		.uleb128 0x2
+ 234 0107 08       		.byte	0x8
+ 235 0108 FA       		.byte	0xfa
+ 236 0109 00       		.byte	0
+ 237 010a 08       		.uleb128 0x8
+ 238 010b 1A000000 		.4byte	.LVL4
+ 239 010f D2010000 		.4byte	0x1d2
+ 240 0113 08       		.uleb128 0x8
+ 241 0114 1E000000 		.4byte	.LVL5
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\ccz0heku.s 			page 6
+
+
+ 242 0118 D9010000 		.4byte	0x1d9
+ 243 011c 09       		.uleb128 0x9
+ 244 011d 26000000 		.4byte	.LVL6
+ 245 0121 E0010000 		.4byte	0x1e0
+ 246 0125 3C010000 		.4byte	0x13c
+ 247 0129 0A       		.uleb128 0xa
+ 248 012a 01       		.uleb128 0x1
+ 249 012b 51       		.byte	0x51
+ 250 012c 05       		.uleb128 0x5
+ 251 012d 03       		.byte	0x3
+ 252 012e 08000000 		.4byte	.LC1
+ 253 0132 0A       		.uleb128 0xa
+ 254 0133 01       		.uleb128 0x1
+ 255 0134 50       		.byte	0x50
+ 256 0135 05       		.uleb128 0x5
+ 257 0136 03       		.byte	0x3
+ 258 0137 00000000 		.4byte	.LC0
+ 259 013b 00       		.byte	0
+ 260 013c 09       		.uleb128 0x9
+ 261 013d 2E000000 		.4byte	.LVL7
+ 262 0141 F6010000 		.4byte	0x1f6
+ 263 0145 58010000 		.4byte	0x158
+ 264 0149 0A       		.uleb128 0xa
+ 265 014a 01       		.uleb128 0x1
+ 266 014b 51       		.byte	0x51
+ 267 014c 05       		.uleb128 0x5
+ 268 014d 03       		.byte	0x3
+ 269 014e 18000000 		.4byte	.LC2
+ 270 0152 0A       		.uleb128 0xa
+ 271 0153 01       		.uleb128 0x1
+ 272 0154 50       		.byte	0x50
+ 273 0155 01       		.uleb128 0x1
+ 274 0156 31       		.byte	0x31
+ 275 0157 00       		.byte	0
+ 276 0158 0B       		.uleb128 0xb
+ 277 0159 34000000 		.4byte	.LVL8
+ 278 015d C1010000 		.4byte	0x1c1
+ 279 0161 0A       		.uleb128 0xa
+ 280 0162 01       		.uleb128 0x1
+ 281 0163 50       		.byte	0x50
+ 282 0164 02       		.uleb128 0x2
+ 283 0165 08       		.byte	0x8
+ 284 0166 FA       		.byte	0xfa
+ 285 0167 00       		.byte	0
+ 286 0168 00       		.byte	0
+ 287 0169 0C       		.uleb128 0xc
+ 288 016a 78010000 		.4byte	.LASF18
+ 289 016e 05       		.byte	0x5
+ 290 016f 5506     		.2byte	0x655
+ 291 0171 75010000 		.4byte	0x175
+ 292 0175 0D       		.uleb128 0xd
+ 293 0176 76000000 		.4byte	0x76
+ 294 017a 0E       		.uleb128 0xe
+ 295 017b 38000000 		.4byte	.LASF19
+ 296 017f 06       		.byte	0x6
+ 297 0180 3E       		.byte	0x3e
+ 298 0181 81000000 		.4byte	0x81
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\ccz0heku.s 			page 7
+
+
+ 299 0185 05       		.uleb128 0x5
+ 300 0186 03       		.byte	0x3
+ 301 0187 00000000 		.4byte	radioSwitch
+ 302 018b 0F       		.uleb128 0xf
+ 303 018c A7000000 		.4byte	0xa7
+ 304 0190 9B010000 		.4byte	0x19b
+ 305 0194 10       		.uleb128 0x10
+ 306 0195 AE000000 		.4byte	0xae
+ 307 0199 95       		.byte	0x95
+ 308 019a 00       		.byte	0
+ 309 019b 0E       		.uleb128 0xe
+ 310 019c 00000000 		.4byte	.LASF20
+ 311 01a0 01       		.byte	0x1
+ 312 01a1 0E       		.byte	0xe
+ 313 01a2 8B010000 		.4byte	0x18b
+ 314 01a6 05       		.uleb128 0x5
+ 315 01a7 03       		.byte	0x3
+ 316 01a8 00000000 		.4byte	message
+ 317 01ac 11       		.uleb128 0x11
+ 318 01ad 96000000 		.4byte	.LASF21
+ 319 01b1 07       		.byte	0x7
+ 320 01b2 54       		.byte	0x54
+ 321 01b3 11       		.uleb128 0x11
+ 322 01b4 69010000 		.4byte	.LASF22
+ 323 01b8 08       		.byte	0x8
+ 324 01b9 54       		.byte	0x54
+ 325 01ba 11       		.uleb128 0x11
+ 326 01bb 08000000 		.4byte	.LASF23
+ 327 01bf 09       		.byte	0x9
+ 328 01c0 54       		.byte	0x54
+ 329 01c1 12       		.uleb128 0x12
+ 330 01c2 46020000 		.4byte	.LASF26
+ 331 01c6 0B       		.byte	0xb
+ 332 01c7 77       		.byte	0x77
+ 333 01c8 D2010000 		.4byte	0x1d2
+ 334 01cc 13       		.uleb128 0x13
+ 335 01cd 8D000000 		.4byte	0x8d
+ 336 01d1 00       		.byte	0
+ 337 01d2 11       		.uleb128 0x11
+ 338 01d3 B9010000 		.4byte	.LASF24
+ 339 01d7 0A       		.byte	0xa
+ 340 01d8 49       		.byte	0x49
+ 341 01d9 11       		.uleb128 0x11
+ 342 01da 44000000 		.4byte	.LASF25
+ 343 01de 06       		.byte	0x6
+ 344 01df 34       		.byte	0x34
+ 345 01e0 12       		.uleb128 0x12
+ 346 01e1 32020000 		.4byte	.LASF27
+ 347 01e5 06       		.byte	0x6
+ 348 01e6 37       		.byte	0x37
+ 349 01e7 F6010000 		.4byte	0x1f6
+ 350 01eb 13       		.uleb128 0x13
+ 351 01ec B5000000 		.4byte	0xb5
+ 352 01f0 13       		.uleb128 0x13
+ 353 01f1 B5000000 		.4byte	0xb5
+ 354 01f5 00       		.byte	0
+ 355 01f6 14       		.uleb128 0x14
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\ccz0heku.s 			page 8
+
+
+ 356 01f7 23000000 		.4byte	.LASF32
+ 357 01fb 06       		.byte	0x6
+ 358 01fc 39       		.byte	0x39
+ 359 01fd 13       		.uleb128 0x13
+ 360 01fe 81000000 		.4byte	0x81
+ 361 0202 13       		.uleb128 0x13
+ 362 0203 B5000000 		.4byte	0xb5
+ 363 0207 00       		.byte	0
+ 364 0208 00       		.byte	0
+ 365              		.section	.debug_abbrev,"",%progbits
+ 366              	.Ldebug_abbrev0:
+ 367 0000 01       		.uleb128 0x1
+ 368 0001 11       		.uleb128 0x11
+ 369 0002 01       		.byte	0x1
+ 370 0003 25       		.uleb128 0x25
+ 371 0004 0E       		.uleb128 0xe
+ 372 0005 13       		.uleb128 0x13
+ 373 0006 0B       		.uleb128 0xb
+ 374 0007 03       		.uleb128 0x3
+ 375 0008 0E       		.uleb128 0xe
+ 376 0009 1B       		.uleb128 0x1b
+ 377 000a 0E       		.uleb128 0xe
+ 378 000b 55       		.uleb128 0x55
+ 379 000c 17       		.uleb128 0x17
+ 380 000d 11       		.uleb128 0x11
+ 381 000e 01       		.uleb128 0x1
+ 382 000f 10       		.uleb128 0x10
+ 383 0010 17       		.uleb128 0x17
+ 384 0011 00       		.byte	0
+ 385 0012 00       		.byte	0
+ 386 0013 02       		.uleb128 0x2
+ 387 0014 24       		.uleb128 0x24
+ 388 0015 00       		.byte	0
+ 389 0016 0B       		.uleb128 0xb
+ 390 0017 0B       		.uleb128 0xb
+ 391 0018 3E       		.uleb128 0x3e
+ 392 0019 0B       		.uleb128 0xb
+ 393 001a 03       		.uleb128 0x3
+ 394 001b 0E       		.uleb128 0xe
+ 395 001c 00       		.byte	0
+ 396 001d 00       		.byte	0
+ 397 001e 03       		.uleb128 0x3
+ 398 001f 16       		.uleb128 0x16
+ 399 0020 00       		.byte	0
+ 400 0021 03       		.uleb128 0x3
+ 401 0022 0E       		.uleb128 0xe
+ 402 0023 3A       		.uleb128 0x3a
+ 403 0024 0B       		.uleb128 0xb
+ 404 0025 3B       		.uleb128 0x3b
+ 405 0026 0B       		.uleb128 0xb
+ 406 0027 49       		.uleb128 0x49
+ 407 0028 13       		.uleb128 0x13
+ 408 0029 00       		.byte	0
+ 409 002a 00       		.byte	0
+ 410 002b 04       		.uleb128 0x4
+ 411 002c 24       		.uleb128 0x24
+ 412 002d 00       		.byte	0
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\ccz0heku.s 			page 9
+
+
+ 413 002e 0B       		.uleb128 0xb
+ 414 002f 0B       		.uleb128 0xb
+ 415 0030 3E       		.uleb128 0x3e
+ 416 0031 0B       		.uleb128 0xb
+ 417 0032 03       		.uleb128 0x3
+ 418 0033 08       		.uleb128 0x8
+ 419 0034 00       		.byte	0
+ 420 0035 00       		.byte	0
+ 421 0036 05       		.uleb128 0x5
+ 422 0037 16       		.uleb128 0x16
+ 423 0038 00       		.byte	0
+ 424 0039 03       		.uleb128 0x3
+ 425 003a 0E       		.uleb128 0xe
+ 426 003b 3A       		.uleb128 0x3a
+ 427 003c 0B       		.uleb128 0xb
+ 428 003d 3B       		.uleb128 0x3b
+ 429 003e 05       		.uleb128 0x5
+ 430 003f 49       		.uleb128 0x49
+ 431 0040 13       		.uleb128 0x13
+ 432 0041 00       		.byte	0
+ 433 0042 00       		.byte	0
+ 434 0043 06       		.uleb128 0x6
+ 435 0044 0F       		.uleb128 0xf
+ 436 0045 00       		.byte	0
+ 437 0046 0B       		.uleb128 0xb
+ 438 0047 0B       		.uleb128 0xb
+ 439 0048 49       		.uleb128 0x49
+ 440 0049 13       		.uleb128 0x13
+ 441 004a 00       		.byte	0
+ 442 004b 00       		.byte	0
+ 443 004c 07       		.uleb128 0x7
+ 444 004d 2E       		.uleb128 0x2e
+ 445 004e 01       		.byte	0x1
+ 446 004f 3F       		.uleb128 0x3f
+ 447 0050 19       		.uleb128 0x19
+ 448 0051 03       		.uleb128 0x3
+ 449 0052 0E       		.uleb128 0xe
+ 450 0053 3A       		.uleb128 0x3a
+ 451 0054 0B       		.uleb128 0xb
+ 452 0055 3B       		.uleb128 0x3b
+ 453 0056 0B       		.uleb128 0xb
+ 454 0057 49       		.uleb128 0x49
+ 455 0058 13       		.uleb128 0x13
+ 456 0059 11       		.uleb128 0x11
+ 457 005a 01       		.uleb128 0x1
+ 458 005b 12       		.uleb128 0x12
+ 459 005c 06       		.uleb128 0x6
+ 460 005d 40       		.uleb128 0x40
+ 461 005e 18       		.uleb128 0x18
+ 462 005f 9742     		.uleb128 0x2117
+ 463 0061 19       		.uleb128 0x19
+ 464 0062 01       		.uleb128 0x1
+ 465 0063 13       		.uleb128 0x13
+ 466 0064 00       		.byte	0
+ 467 0065 00       		.byte	0
+ 468 0066 08       		.uleb128 0x8
+ 469 0067 898201   		.uleb128 0x4109
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\ccz0heku.s 			page 10
+
+
+ 470 006a 00       		.byte	0
+ 471 006b 11       		.uleb128 0x11
+ 472 006c 01       		.uleb128 0x1
+ 473 006d 31       		.uleb128 0x31
+ 474 006e 13       		.uleb128 0x13
+ 475 006f 00       		.byte	0
+ 476 0070 00       		.byte	0
+ 477 0071 09       		.uleb128 0x9
+ 478 0072 898201   		.uleb128 0x4109
+ 479 0075 01       		.byte	0x1
+ 480 0076 11       		.uleb128 0x11
+ 481 0077 01       		.uleb128 0x1
+ 482 0078 31       		.uleb128 0x31
+ 483 0079 13       		.uleb128 0x13
+ 484 007a 01       		.uleb128 0x1
+ 485 007b 13       		.uleb128 0x13
+ 486 007c 00       		.byte	0
+ 487 007d 00       		.byte	0
+ 488 007e 0A       		.uleb128 0xa
+ 489 007f 8A8201   		.uleb128 0x410a
+ 490 0082 00       		.byte	0
+ 491 0083 02       		.uleb128 0x2
+ 492 0084 18       		.uleb128 0x18
+ 493 0085 9142     		.uleb128 0x2111
+ 494 0087 18       		.uleb128 0x18
+ 495 0088 00       		.byte	0
+ 496 0089 00       		.byte	0
+ 497 008a 0B       		.uleb128 0xb
+ 498 008b 898201   		.uleb128 0x4109
+ 499 008e 01       		.byte	0x1
+ 500 008f 11       		.uleb128 0x11
+ 501 0090 01       		.uleb128 0x1
+ 502 0091 31       		.uleb128 0x31
+ 503 0092 13       		.uleb128 0x13
+ 504 0093 00       		.byte	0
+ 505 0094 00       		.byte	0
+ 506 0095 0C       		.uleb128 0xc
+ 507 0096 34       		.uleb128 0x34
+ 508 0097 00       		.byte	0
+ 509 0098 03       		.uleb128 0x3
+ 510 0099 0E       		.uleb128 0xe
+ 511 009a 3A       		.uleb128 0x3a
+ 512 009b 0B       		.uleb128 0xb
+ 513 009c 3B       		.uleb128 0x3b
+ 514 009d 05       		.uleb128 0x5
+ 515 009e 49       		.uleb128 0x49
+ 516 009f 13       		.uleb128 0x13
+ 517 00a0 3F       		.uleb128 0x3f
+ 518 00a1 19       		.uleb128 0x19
+ 519 00a2 3C       		.uleb128 0x3c
+ 520 00a3 19       		.uleb128 0x19
+ 521 00a4 00       		.byte	0
+ 522 00a5 00       		.byte	0
+ 523 00a6 0D       		.uleb128 0xd
+ 524 00a7 35       		.uleb128 0x35
+ 525 00a8 00       		.byte	0
+ 526 00a9 49       		.uleb128 0x49
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\ccz0heku.s 			page 11
+
+
+ 527 00aa 13       		.uleb128 0x13
+ 528 00ab 00       		.byte	0
+ 529 00ac 00       		.byte	0
+ 530 00ad 0E       		.uleb128 0xe
+ 531 00ae 34       		.uleb128 0x34
+ 532 00af 00       		.byte	0
+ 533 00b0 03       		.uleb128 0x3
+ 534 00b1 0E       		.uleb128 0xe
+ 535 00b2 3A       		.uleb128 0x3a
+ 536 00b3 0B       		.uleb128 0xb
+ 537 00b4 3B       		.uleb128 0x3b
+ 538 00b5 0B       		.uleb128 0xb
+ 539 00b6 49       		.uleb128 0x49
+ 540 00b7 13       		.uleb128 0x13
+ 541 00b8 3F       		.uleb128 0x3f
+ 542 00b9 19       		.uleb128 0x19
+ 543 00ba 02       		.uleb128 0x2
+ 544 00bb 18       		.uleb128 0x18
+ 545 00bc 00       		.byte	0
+ 546 00bd 00       		.byte	0
+ 547 00be 0F       		.uleb128 0xf
+ 548 00bf 01       		.uleb128 0x1
+ 549 00c0 01       		.byte	0x1
+ 550 00c1 49       		.uleb128 0x49
+ 551 00c2 13       		.uleb128 0x13
+ 552 00c3 01       		.uleb128 0x1
+ 553 00c4 13       		.uleb128 0x13
+ 554 00c5 00       		.byte	0
+ 555 00c6 00       		.byte	0
+ 556 00c7 10       		.uleb128 0x10
+ 557 00c8 21       		.uleb128 0x21
+ 558 00c9 00       		.byte	0
+ 559 00ca 49       		.uleb128 0x49
+ 560 00cb 13       		.uleb128 0x13
+ 561 00cc 2F       		.uleb128 0x2f
+ 562 00cd 0B       		.uleb128 0xb
+ 563 00ce 00       		.byte	0
+ 564 00cf 00       		.byte	0
+ 565 00d0 11       		.uleb128 0x11
+ 566 00d1 2E       		.uleb128 0x2e
+ 567 00d2 00       		.byte	0
+ 568 00d3 3F       		.uleb128 0x3f
+ 569 00d4 19       		.uleb128 0x19
+ 570 00d5 03       		.uleb128 0x3
+ 571 00d6 0E       		.uleb128 0xe
+ 572 00d7 3A       		.uleb128 0x3a
+ 573 00d8 0B       		.uleb128 0xb
+ 574 00d9 3B       		.uleb128 0x3b
+ 575 00da 0B       		.uleb128 0xb
+ 576 00db 27       		.uleb128 0x27
+ 577 00dc 19       		.uleb128 0x19
+ 578 00dd 3C       		.uleb128 0x3c
+ 579 00de 19       		.uleb128 0x19
+ 580 00df 00       		.byte	0
+ 581 00e0 00       		.byte	0
+ 582 00e1 12       		.uleb128 0x12
+ 583 00e2 2E       		.uleb128 0x2e
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\ccz0heku.s 			page 12
+
+
+ 584 00e3 01       		.byte	0x1
+ 585 00e4 3F       		.uleb128 0x3f
+ 586 00e5 19       		.uleb128 0x19
+ 587 00e6 03       		.uleb128 0x3
+ 588 00e7 0E       		.uleb128 0xe
+ 589 00e8 3A       		.uleb128 0x3a
+ 590 00e9 0B       		.uleb128 0xb
+ 591 00ea 3B       		.uleb128 0x3b
+ 592 00eb 0B       		.uleb128 0xb
+ 593 00ec 27       		.uleb128 0x27
+ 594 00ed 19       		.uleb128 0x19
+ 595 00ee 3C       		.uleb128 0x3c
+ 596 00ef 19       		.uleb128 0x19
+ 597 00f0 01       		.uleb128 0x1
+ 598 00f1 13       		.uleb128 0x13
+ 599 00f2 00       		.byte	0
+ 600 00f3 00       		.byte	0
+ 601 00f4 13       		.uleb128 0x13
+ 602 00f5 05       		.uleb128 0x5
+ 603 00f6 00       		.byte	0
+ 604 00f7 49       		.uleb128 0x49
+ 605 00f8 13       		.uleb128 0x13
+ 606 00f9 00       		.byte	0
+ 607 00fa 00       		.byte	0
+ 608 00fb 14       		.uleb128 0x14
+ 609 00fc 2E       		.uleb128 0x2e
+ 610 00fd 01       		.byte	0x1
+ 611 00fe 3F       		.uleb128 0x3f
+ 612 00ff 19       		.uleb128 0x19
+ 613 0100 03       		.uleb128 0x3
+ 614 0101 0E       		.uleb128 0xe
+ 615 0102 3A       		.uleb128 0x3a
+ 616 0103 0B       		.uleb128 0xb
+ 617 0104 3B       		.uleb128 0x3b
+ 618 0105 0B       		.uleb128 0xb
+ 619 0106 27       		.uleb128 0x27
+ 620 0107 19       		.uleb128 0x19
+ 621 0108 3C       		.uleb128 0x3c
+ 622 0109 19       		.uleb128 0x19
+ 623 010a 00       		.byte	0
+ 624 010b 00       		.byte	0
+ 625 010c 00       		.byte	0
+ 626              		.section	.debug_aranges,"",%progbits
+ 627 0000 1C000000 		.4byte	0x1c
+ 628 0004 0200     		.2byte	0x2
+ 629 0006 00000000 		.4byte	.Ldebug_info0
+ 630 000a 04       		.byte	0x4
+ 631 000b 00       		.byte	0
+ 632 000c 0000     		.2byte	0
+ 633 000e 0000     		.2byte	0
+ 634 0010 00000000 		.4byte	.LFB63
+ 635 0014 44000000 		.4byte	.LFE63-.LFB63
+ 636 0018 00000000 		.4byte	0
+ 637 001c 00000000 		.4byte	0
+ 638              		.section	.debug_ranges,"",%progbits
+ 639              	.Ldebug_ranges0:
+ 640 0000 00000000 		.4byte	.LFB63
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\ccz0heku.s 			page 13
+
+
+ 641 0004 44000000 		.4byte	.LFE63
+ 642 0008 00000000 		.4byte	0
+ 643 000c 00000000 		.4byte	0
+ 644              		.section	.debug_line,"",%progbits
+ 645              	.Ldebug_line0:
+ 646 0000 CF010000 		.section	.debug_str,"MS",%progbits,1
+ 646      0200A101 
+ 646      00000201 
+ 646      FB0E0D00 
+ 646      01010101 
+ 647              	.LASF20:
+ 648 0000 6D657373 		.ascii	"message\000"
+ 648      61676500 
+ 649              	.LASF23:
+ 650 0008 55415254 		.ascii	"UART_DEBUG_Start\000"
+ 650      5F444542 
+ 650      55475F53 
+ 650      74617274 
+ 650      00
+ 651              	.LASF9:
+ 652 0019 5F5F696E 		.ascii	"__int32_t\000"
+ 652      7433325F 
+ 652      7400
+ 653              	.LASF32:
+ 654 0023 4E696D62 		.ascii	"Nimbelink_GSDataXfer\000"
+ 654      656C696E 
+ 654      6B5F4753 
+ 654      44617461 
+ 654      58666572 
+ 655              	.LASF19:
+ 656 0038 72616469 		.ascii	"radioSwitch\000"
+ 656      6F537769 
+ 656      74636800 
+ 657              	.LASF25:
+ 658 0044 4E696D62 		.ascii	"Nimbelink_Start\000"
+ 658      656C696E 
+ 658      6B5F5374 
+ 658      61727400 
+ 659              	.LASF13:
+ 660 0054 666C6F61 		.ascii	"float\000"
+ 660      7400
+ 661              	.LASF1:
+ 662 005a 756E7369 		.ascii	"unsigned char\000"
+ 662      676E6564 
+ 662      20636861 
+ 662      7200
+ 663              	.LASF29:
+ 664 0068 2E5C6D61 		.ascii	".\\main.c\000"
+ 664      696E2E63 
+ 664      00
+ 665              	.LASF5:
+ 666 0071 6C6F6E67 		.ascii	"long unsigned int\000"
+ 666      20756E73 
+ 666      69676E65 
+ 666      6420696E 
+ 666      7400
+ 667              	.LASF3:
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\ccz0heku.s 			page 14
+
+
+ 668 0083 73686F72 		.ascii	"short unsigned int\000"
+ 668      7420756E 
+ 668      7369676E 
+ 668      65642069 
+ 668      6E7400
+ 669              	.LASF21:
+ 670 0096 55415254 		.ascii	"UART_NL_Start\000"
+ 670      5F4E4C5F 
+ 670      53746172 
+ 670      7400
+ 671              	.LASF14:
+ 672 00a4 646F7562 		.ascii	"double\000"
+ 672      6C6500
+ 673              	.LASF31:
+ 674 00ab 6D61696E 		.ascii	"main\000"
+ 674      00
+ 675              	.LASF12:
+ 676 00b0 75696E74 		.ascii	"uint32\000"
+ 676      333200
+ 677              	.LASF28:
+ 678 00b7 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 678      4320342E 
+ 678      392E3320 
+ 678      32303135 
+ 678      30333033 
+ 679 00ea 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 679      20726576 
+ 679      6973696F 
+ 679      6E203232 
+ 679      31323230 
+ 680 011d 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 680      66756E63 
+ 680      74696F6E 
+ 680      2D736563 
+ 680      74696F6E 
+ 681              	.LASF8:
+ 682 0145 756E7369 		.ascii	"unsigned int\000"
+ 682      676E6564 
+ 682      20696E74 
+ 682      00
+ 683              	.LASF7:
+ 684 0152 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 684      206C6F6E 
+ 684      6720756E 
+ 684      7369676E 
+ 684      65642069 
+ 685              	.LASF22:
+ 686 0169 55415254 		.ascii	"UART_SRV_Start\000"
+ 686      5F535256 
+ 686      5F537461 
+ 686      727400
+ 687              	.LASF18:
+ 688 0178 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 688      52784275 
+ 688      66666572 
+ 688      00
+ 689              	.LASF10:
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\ccz0heku.s 			page 15
+
+
+ 690 0185 696E7433 		.ascii	"int32_t\000"
+ 690      325F7400 
+ 691              	.LASF16:
+ 692 018d 73697A65 		.ascii	"sizetype\000"
+ 692      74797065 
+ 692      00
+ 693              	.LASF6:
+ 694 0196 6C6F6E67 		.ascii	"long long int\000"
+ 694      206C6F6E 
+ 694      6720696E 
+ 694      7400
+ 695              	.LASF15:
+ 696 01a4 63686172 		.ascii	"char\000"
+ 696      00
+ 697              	.LASF2:
+ 698 01a9 73686F72 		.ascii	"short int\000"
+ 698      7420696E 
+ 698      7400
+ 699              	.LASF11:
+ 700 01b3 75696E74 		.ascii	"uint8\000"
+ 700      3800
+ 701              	.LASF24:
+ 702 01b9 53657276 		.ascii	"Servo_Start\000"
+ 702      6F5F5374 
+ 702      61727400 
+ 703              	.LASF4:
+ 704 01c5 6C6F6E67 		.ascii	"long int\000"
+ 704      20696E74 
+ 704      00
+ 705              	.LASF30:
+ 706 01ce 433A5C55 		.ascii	"C:\\Users\\edtriccorp\\Documents\\PSoC Creator\\Ava"
+ 706      73657273 
+ 706      5C656474 
+ 706      72696363 
+ 706      6F72705C 
+ 707 01fc 74617220 		.ascii	"tar Comms\\Nimbelink 4.0.cydsn\000"
+ 707      436F6D6D 
+ 707      735C4E69 
+ 707      6D62656C 
+ 707      696E6B20 
+ 708              	.LASF17:
+ 709 021a 6C6F6E67 		.ascii	"long double\000"
+ 709      20646F75 
+ 709      626C6500 
+ 710              	.LASF0:
+ 711 0226 7369676E 		.ascii	"signed char\000"
+ 711      65642063 
+ 711      68617200 
+ 712              	.LASF27:
+ 713 0232 4E696D62 		.ascii	"Nimbelink_ConnectGS\000"
+ 713      656C696E 
+ 713      6B5F436F 
+ 713      6E6E6563 
+ 713      74475300 
+ 714              	.LASF26:
+ 715 0246 43794465 		.ascii	"CyDelay\000"
+ 715      6C617900 
+ARM GAS  C:\Users\EDTRIC~1\AppData\Local\Temp\ccz0heku.s 			page 16
+
+
+ 716              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br
